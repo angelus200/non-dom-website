@@ -1,11 +1,21 @@
 "use client";
 import { useEffect } from "react";
 import {Link} from "@/i18n/routing";
-import {useTranslations} from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
 
 export default function Home() {
   const t = useTranslations('home');
+  const locale = useLocale();
   useEffect(() => {
+    // Load Vidyard script for German locale
+    if (locale === 'de' && !document.querySelector('script[src*="vidyard"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://play.vidyard.com/embed/v4.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    // Fade-up animation observer
     const obs = new IntersectionObserver((entries) => {
       entries.forEach((e, i) => {
         if (e.isIntersecting) {
@@ -20,7 +30,7 @@ export default function Home() {
       obs.observe(el);
     });
     return () => obs.disconnect();
-  }, []);
+  }, [locale]);
 
   return (
     <>
@@ -74,6 +84,21 @@ export default function Home() {
                 </div>
               ))}
             </div>
+
+            {/* Founder Video - German only */}
+            {locale === 'de' && (
+              <div className="mt-10 max-w-[800px]">
+                <img
+                  style={{width: '100%', margin: 'auto', display: 'block'}}
+                  className="vidyard-player-embed rounded-2xl shadow-[0_8px_30px_rgba(0,180,216,0.25)]"
+                  src="https://play.vidyard.com/CArVm63iGds3wzXw5D1kx4.jpg"
+                  data-uuid="CArVm63iGds3wzXw5D1kx4"
+                  data-v="4"
+                  data-type="inline"
+                  alt="Die KI-Revolution: Überleben für KMU"
+                />
+              </div>
+            )}
           </div>
           {/* Hero Card */}
           <div className="hidden lg:block bg-white/5 border border-[rgba(0,180,216,0.2)] rounded-2xl p-7 backdrop-blur-sm">
