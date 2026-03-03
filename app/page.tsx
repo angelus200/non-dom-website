@@ -75,7 +75,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-[rgba(0,180,216,0.18)] border border-[rgba(0,180,216,0.35)] px-4 py-1.5 rounded-full text-[#48CAE4] text-xs font-semibold mb-5">
-              ✦ Deutschlands #1 KI Mittelstands-Plattform
+              🇨🇭 Schweizer Qualität & Sicherheit
             </div>
             <h1 className="text-4xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight mb-5">
               Der #1 <span className="text-[#00B4D8]">Unternehmer</span><br/>Marktplatz
