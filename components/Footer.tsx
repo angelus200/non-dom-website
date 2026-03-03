@@ -8,11 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-[#0096C7] rounded-lg flex items-center justify-center text-white font-black text-sm">ND</div>
-              <div>
-                <div className="text-white font-black text-base">NON DOM Group</div>
-                <div className="text-[#00B4D8] text-[0.6rem] tracking-widest uppercase font-bold">Der #1 Unternehmer Marktplatz</div>
-              </div>
+              <img src="/logos/non-dom-logo.webp" alt="NON DOM GROUP" className="h-10 w-auto" />
             </div>
             <p className="text-white/45 text-sm leading-relaxed max-w-[270px]">
               Deutschlands #1 KI Mittelstands-Plattform. 32+ Unternehmen in ganz Europa durch modernste KI-Technologie vernetzt.
