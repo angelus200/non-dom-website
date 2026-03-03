@@ -3,11 +3,11 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 const apps = [
-  { icon: "💼", name: "Business Angel App", url: "businessangel.app", href: "https://www.businessangel.app", tags: ["Investment", "Deal-Flow", "KI-Matching"] },
-  { icon: "🏢", name: "ImmoPortal", url: "immoportal.app", href: "https://portal.immoportal.app", tags: ["Immobilien", "Refinanzierung", "KI-Analyse"] },
-  { icon: "🤖", name: "Buchhaltung KI", url: "buchhaltung-ki.app", href: "https://www.buchhaltung-ki.app", tags: ["Buchhaltung", "DATEV", "Automatisierung"] },
-  { icon: "📦", name: "E-Commerce Rente", url: "ecommercerente.com", href: "https://www.ecommercerente.com", tags: ["Amazon FBA", "Passives Einkommen", "B2B"] },
-  { icon: "🔧", name: "Unternehmensoptimierung", url: "unternehmensoptimierung.app", href: "https://www.unternehmensoptimierung.app", tags: ["Holding", "Vermögensschutz"] },
+  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/6c1a060c-ffc4-4e36-4132-8a1e5ce36001/public", name: "Business Angel App", url: "businessangel.app", href: "https://www.businessangel.app", tags: ["Investment", "Deal-Flow", "KI-Matching"] },
+  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/80501913-9d72-4804-335e-de63063c1800/public", name: "ImmoPortal", url: "immoportal.app", href: "https://portal.immoportal.app", tags: ["Immobilien", "Refinanzierung", "KI-Analyse"] },
+  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/c582d6ad-dd7a-4aed-584f-5e9ace690900/public", name: "Buchhaltung KI", url: "buchhaltung-ki.app", href: "https://www.buchhaltung-ki.app", tags: ["Buchhaltung", "DATEV", "Automatisierung"] },
+  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/0201a548-ba53-4eb9-d265-183dc763d400/public", name: "E-Commerce Rente", url: "ecommercerente.com", href: "https://www.ecommercerente.com", tags: ["Amazon FBA", "Passives Einkommen", "B2B"] },
+  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/960202a1-985a-49ef-c707-22ca49543100/public", name: "Unternehmensoptimierung", url: "unternehmensoptimierung.app", href: "https://www.unternehmensoptimierung.app", tags: ["Holding", "Vermögensschutz"] },
   { icon: "✨", name: "Weitere KI-Apps", url: "In Entwicklung", href: null, tags: ["Coming Soon"], disabled: true },
 ];
 
@@ -116,7 +116,11 @@ export default function Home() {
             {apps.filter(a => !a.disabled).map((app) => (
               <a key={app.name} href={app.href!} target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-white/[0.04] hover:bg-[rgba(0,180,216,0.12)] border border-[rgba(0,180,216,0.1)] hover:border-[rgba(0,180,216,0.28)] rounded-xl p-3 mb-2.5 text-white transition-all duration-200 group">
-                <span className="text-2xl flex-shrink-0">{app.icon}</span>
+                {app.icon.startsWith('http') ? (
+                  <img src={app.icon} className="w-12 h-12 rounded-xl object-cover flex-shrink-0" alt={app.name} />
+                ) : (
+                  <span className="text-2xl flex-shrink-0">{app.icon}</span>
+                )}
                 <div>
                   <div className="font-bold text-sm">{app.name}</div>
                   <div className="text-white/50 text-xs mt-0.5">{app.tags.join(" · ")}</div>
@@ -167,7 +171,11 @@ export default function Home() {
                   <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#00B4D8] to-[#0096C7] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"/>
                   {app.disabled && <span className="absolute top-3 right-3 bg-gray-100 text-gray-400 text-[0.65rem] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">Demnächst</span>}
                   {!app.disabled && <span className="float-right text-[#0096C7] text-sm">↗</span>}
-                  <span className="text-3xl mb-3 block">{app.icon}</span>
+                  {app.icon.startsWith('http') ? (
+                    <img src={app.icon} className="w-12 h-12 rounded-xl object-cover mb-3" alt={app.name} />
+                  ) : (
+                    <span className="text-3xl mb-3 block">{app.icon}</span>
+                  )}
                   <div className="font-black text-[#0A1628] text-base mb-1">{app.name}</div>
                   <div className="text-[#0096C7] text-xs font-semibold mb-3">{app.url}</div>
                   <div className="flex gap-1.5 flex-wrap">
