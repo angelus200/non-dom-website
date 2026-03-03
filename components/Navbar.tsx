@@ -34,14 +34,6 @@ export default function Navbar() {
         {/* CTA Buttons */}
         <div className="hidden lg:flex items-center gap-2 ml-auto">
           <a
-            href="https://backoffice.non-dom.group/user/auth/login/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-2 border-[#0096C7] text-[#0096C7] hover:bg-[#0096C7] hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200"
-          >
-            🔐 Login
-          </a>
-          <a
             href="https://non-dom.group/mitglied-werden"
             target="_blank"
             rel="noopener noreferrer"
