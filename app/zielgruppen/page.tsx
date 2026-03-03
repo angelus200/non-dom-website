@@ -37,16 +37,6 @@ export default function Zielgruppen() {
           ))}
         </div>
       </section>
-      <section className="py-16 px-4 bg-gradient-to-r from-[#0077B6] to-[#0096C7] text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl lg:text-3xl font-black text-white mb-3">Für Ihre Branche die passende Lösung</h2>
-          <p className="text-white/80 mb-6">Kostenlos starten — keine Kreditkarte erforderlich.</p>
-          <a href="https://non-dom.group/mitglied-werden" target="_blank" rel="noopener noreferrer"
-            className="inline-block bg-white text-[#0077B6] hover:-translate-y-0.5 hover:shadow-xl px-8 py-3.5 rounded-xl font-bold transition-all duration-200">
-            👥 Jetzt kostenlos starten →
-          </a>
-        </div>
-      </section>
     </>
   );
 }

@@ -34,7 +34,7 @@ export default function Webinare() {
                 </div>
                 <h3 className="font-black text-[#0A1628] text-lg mb-1">{w.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">{w.desc}</p>
-                <a href={w.url || "https://non-dom.group/mitglied-werden"} target="_blank" rel="noopener noreferrer"
+                <a href={w.url || "/kontakt"} target={w.url ? "_blank" : undefined} rel={w.url ? "noopener noreferrer" : undefined}
                   className="inline-block bg-[#0096C7] hover:bg-[#0077B6] text-white text-sm font-bold px-5 py-2 rounded-lg transition-all duration-200">
                   {w.url ? "Jetzt besuchen →" : "Jetzt anmelden →"}
                 </a>

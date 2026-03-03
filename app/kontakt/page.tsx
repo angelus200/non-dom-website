@@ -16,8 +16,6 @@ export default function Kontakt() {
               {[
                 { icon: "📞", title: "Kostenlose Hotline", info: "0800 70 800 44", sub: "Mo–Fr 9:00–18:00 Uhr", href: "tel:080070800044" },
                 { icon: "💬", title: "Telegram Community", info: "@nondomgroup", sub: "Direkte Antwort in der Community", href: "https://t.me/nondomgroup" },
-                { icon: "👥", title: "Mitglied werden", info: "Kostenlos starten", sub: "Sofort Zugang zu allen Plattformen", href: "https://non-dom.group/mitglied-werden" },
-                { icon: "🤝", title: "Partner werden", info: "Vertriebspartner-Programm", sub: "Provisionsbasiert, ortsunabhängig", href: "https://vertrieb.non-dom.group/" },
               ].map((c) => (
                 <a key={c.title} href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer"
                   className="bg-white border-[1.5px] border-gray-200 hover:border-[#0096C7] rounded-xl p-5 flex gap-4 items-center transition-all duration-200 hover:shadow-[0_4px_20px_rgba(0,150,199,0.12)]">

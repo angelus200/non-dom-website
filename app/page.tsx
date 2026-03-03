@@ -92,17 +92,17 @@ export default function Home() {
               KI-gestützte Plattformen, automatisierte Workflows und ein Netzwerk aus 32+ europäischen Unternehmen — ab sofort kostenlos.
             </p>
             <div className="flex gap-3 flex-wrap mb-10">
-              <a href="https://non-dom.group/mitglied-werden" target="_blank" rel="noopener noreferrer"
-                className="bg-[#0096C7] hover:bg-[#0077B6] text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,150,199,0.5)]">
-                👥 Jetzt Mitglied werden →
-              </a>
               <Link href="/loesungen"
+                className="bg-[#0096C7] hover:bg-[#0077B6] text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,150,199,0.5)]">
+                Alle Lösungen ansehen →
+              </Link>
+              <Link href="/kontakt"
                 className="border-2 border-[rgba(0,180,216,0.45)] text-[#48CAE4] hover:border-[#00B4D8] hover:bg-[rgba(0,180,216,0.08)] px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200">
-                Alle Lösungen ansehen
+                Kontakt aufnehmen
               </Link>
             </div>
             <div className="flex gap-8 flex-wrap">
-              {[["32+","Unternehmen"],["5","KI-Plattformen"],["€0","Basis-Mitgliedschaft"],["48h","Erste Ergebnisse"]].map(([n,l]) => (
+              {[["32+","Unternehmen"],["5","KI-Plattformen"],["€0","Kostenloser Start"],["48h","Erste Ergebnisse"]].map(([n,l]) => (
                 <div key={l}>
                   <span className="block text-[1.9rem] font-black text-[#00B4D8] tracking-tight leading-none">{n}</span>
                   <span className="text-white/55 text-xs mt-0.5 block">{l}</span>
@@ -223,7 +223,7 @@ export default function Home() {
                 { icon: "🏆", t: "Europäisches Netzwerk", d: "32+ Unternehmen in ganz Europa — einzigartiges Know-how und Netzwerkeffekte." },
                 { icon: "💡", t: "Spezialisierte KI-Plattformen", d: "Jede Plattform löst echte Mittelstandsprobleme mit modernster KI — keine Generallösung." },
                 { icon: "🔗", t: "Vollständige Integration", d: "Ein Login, ein Dashboard — alle Plattformen kommunizieren miteinander." },
-                { icon: "💰", t: "Unschlagbares Preis-Leistungs-Verhältnis", d: "Basis-Mitgliedschaft kostenlos. Premium ab einem Bruchteil vergleichbarer Lösungen." },
+                { icon: "💰", t: "Unschlagbares Preis-Leistungs-Verhältnis", d: "Kostenloser Einstieg. Premium-Features ab einem Bruchteil vergleichbarer Lösungen." },
               ].map((p, i) => (
                 <div key={p.t} className="flex gap-4 fade-up">
                   <div className="flex-shrink-0 w-11 h-11 bg-[rgba(0,180,216,0.14)] border border-[rgba(0,180,216,0.28)] rounded-xl flex items-center justify-center text-xl">{p.icon}</div>
@@ -270,24 +270,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 px-4 bg-gradient-to-r from-[#0077B6] to-[#0096C7] text-center relative overflow-hidden">
-        <div className="absolute inset-0" style={{background:"radial-gradient(circle at 30% 50%, rgba(255,255,255,0.07) 0%, transparent 50%), radial-gradient(circle at 70% 50%, rgba(255,255,255,0.05) 0%, transparent 50%)"}}/>
-        <div className="max-w-3xl mx-auto relative z-10">
-          <h2 className="text-3xl lg:text-4xl font-black text-white tracking-tight mb-3">Bereit für den smarten<br/>Unternehmer-Marktplatz?</h2>
-          <p className="text-white/80 text-base mb-8">Kostenlos registrieren. Erste Ergebnisse in 48 Stunden. Kein Risiko.</p>
-          <div className="flex gap-3 justify-center flex-wrap">
-            <a href="https://non-dom.group/mitglied-werden" target="_blank" rel="noopener noreferrer"
-              className="bg-white text-[#0077B6] hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)] hover:-translate-y-0.5 px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200">
-              👥 Jetzt kostenlos Mitglied werden →
-            </a>
-            <Link href="/kontakt"
-              className="border-2 border-white/50 hover:border-white hover:bg-white/10 text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200">
-              Beratungsgespräch buchen
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

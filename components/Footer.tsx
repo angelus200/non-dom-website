@@ -53,10 +53,7 @@ export default function Footer() {
           <div>
             <h4 className="text-[#00B4D8] text-xs font-bold tracking-widest uppercase mb-4">Unternehmen</h4>
             {[
-              { href: "https://non-dom.group/mitglied-werden", label: "Mitglied werden" },
-              { href: "https://vertrieb.non-dom.group/", label: "Partner werden" },
               { href: "/kontakt", label: "Kontakt" },
-              { href: "https://backoffice.non-dom.group/user/auth/login/", label: "Login Backoffice" },
               { href: "https://t.me/nondomgroup", label: "Telegram Community" },
             ].map((l) => (
               <a key={l.href} href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined}

@@ -34,22 +34,6 @@ export default function Navbar() {
         {/* CTA Buttons */}
         <div className="hidden lg:flex items-center gap-2 ml-auto">
           <a
-            href="https://non-dom.group/mitglied-werden"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#0096C7] hover:bg-[#0077B6] text-white px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200"
-          >
-            👥 Mitglied Werden
-          </a>
-          <a
-            href="https://vertrieb.non-dom.group/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#0A1628] text-[#00B4D8] px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 hover:bg-[#0D1F3C]"
-          >
-            🤝 Partner Werden
-          </a>
-          <a
             href="tel:080070800044"
             className="bg-[#FF3B30] hover:bg-[#cc2e25] text-white px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200"
           >
@@ -82,10 +66,7 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <a href="https://non-dom.group/mitglied-werden" target="_blank" rel="noopener noreferrer" className="mt-2 bg-[#0096C7] text-white text-center py-2.5 rounded-lg font-bold">
-            👥 Mitglied Werden
-          </a>
-          <a href="tel:080070800044" className="bg-[#FF3B30] text-white text-center py-2.5 rounded-lg font-bold">
+          <a href="tel:080070800044" className="mt-2 bg-[#FF3B30] text-white text-center py-2.5 rounded-lg font-bold">
             📞 0800 70 800 44
           </a>
         </div>
