@@ -6,15 +6,15 @@ export default function Kontakt() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0A1628] to-[#0D1F3C] py-20 px-4">
+      <section className="bg-gradient-to-br from-[#0A1628] to-[#0D1F3C] py-12 sm:py-16 md:py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <span className="inline-block bg-[rgba(0,180,216,0.18)] text-[#48CAE4] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-4">{t('badge')}</span>
           <h1 className="text-4xl lg:text-5xl font-black text-white tracking-tight mb-4">{t('title')} <span className="text-[#00B4D8]">{t('titleHighlight')}</span></h1>
           <p className="text-white/65 text-lg max-w-xl mx-auto">{t('subtitle')}</p>
         </div>
       </section>
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
           <div>
             <h2 className="text-2xl font-black text-[#0A1628] mb-6">{t('options.title')}</h2>
             <div className="flex flex-col gap-4">
@@ -34,7 +34,7 @@ export default function Kontakt() {
               ))}
             </div>
           </div>
-          <div className="bg-white border-[1.5px] border-gray-200 rounded-2xl p-8">
+          <div className="bg-white border-[1.5px] border-gray-200 rounded-2xl p-5 sm:p-6 md:p-8">
             <h2 className="text-2xl font-black text-[#0A1628] mb-6">{t('form.title')}</h2>
             <div className="flex flex-col gap-4">
               {[

@@ -20,17 +20,17 @@ export default function Webinare() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0A1628] to-[#0D1F3C] py-20 px-4">
+      <section className="bg-gradient-to-br from-[#0A1628] to-[#0D1F3C] py-12 sm:py-16 md:py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <span className="inline-block bg-[rgba(0,180,216,0.18)] text-[#48CAE4] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-4">{t('badge')}</span>
           <h1 className="text-4xl lg:text-5xl font-black text-white tracking-tight mb-4">{t('title')} <span className="text-[#00B4D8]">{t('titleHighlight')}</span></h1>
           <p className="text-white/65 text-lg max-w-2xl mx-auto">{t('subtitle')}</p>
         </div>
       </section>
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto flex flex-col gap-5">
           {webinare.map((w) => (
-            <div key={w.title} className="bg-white border-[1.5px] border-gray-200 hover:border-[#0096C7] rounded-2xl p-7 flex gap-5 items-start transition-all duration-200 hover:shadow-[0_8px_28px_rgba(0,150,199,0.12)]">
+            <div key={w.title} className="bg-white border-[1.5px] border-gray-200 hover:border-[#0096C7] rounded-2xl p-5 sm:p-6 md:p-7 flex flex-col sm:flex-row gap-5 items-start transition-all duration-200 hover:shadow-[0_8px_28px_rgba(0,150,199,0.12)]">
               <div className="text-4xl flex-shrink-0">{w.icon}</div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -40,7 +40,7 @@ export default function Webinare() {
                 <h3 className="font-black text-[#0A1628] text-lg mb-1">{w.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">{w.desc}</p>
                 <a href={w.url || "/kontakt"} target={w.url ? "_blank" : undefined} rel={w.url ? "noopener noreferrer" : undefined}
-                  className="inline-block bg-[#0096C7] hover:bg-[#0077B6] text-white text-sm font-bold px-5 py-2 rounded-lg transition-all duration-200">
+                  className="inline-block w-full sm:w-auto text-center bg-[#0096C7] hover:bg-[#0077B6] text-white text-sm font-bold px-5 py-2.5 sm:py-2 rounded-lg transition-all duration-200">
                   {w.url ? t('cta.visit') : t('cta.register')}
                 </a>
               </div>

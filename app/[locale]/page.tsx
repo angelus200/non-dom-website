@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-gradient-to-br from-[#0A1628] via-[#0D1F3C] to-[#0a2a4a] py-24 px-4 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#0A1628] via-[#0D1F3C] to-[#0a2a4a] py-12 sm:py-16 md:py-24 px-4 relative overflow-hidden">
         <video
           autoPlay
           muted
@@ -49,13 +49,13 @@ export default function Home() {
         <div className="absolute inset-0" style={{backgroundImage:"linear-gradient(rgba(0,180,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,180,216,0.04) 1px, transparent 1px)", backgroundSize:"52px 52px", WebkitMaskImage:"radial-gradient(ellipse 90% 90% at 50% 50%, black 30%, transparent 100%)"}}/>
         <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 bg-[rgba(0,180,216,0.18)] border border-[rgba(0,180,216,0.35)] px-4 py-1.5 rounded-full text-[#48CAE4] text-xs font-semibold mb-5">
-              <div className="flex items-center justify-center gap-8 text-sm font-semibold">
-                <span className="flex items-center gap-2 text-white text-base">
+            <div className="inline-flex items-center gap-2 bg-[rgba(0,180,216,0.18)] border border-[rgba(0,180,216,0.35)] px-3 sm:px-4 py-1.5 rounded-full text-[#48CAE4] text-xs font-semibold mb-5">
+              <div className="flex items-center justify-center gap-3 sm:gap-8 text-sm font-semibold">
+                <span className="flex items-center gap-1.5 sm:gap-2 text-white text-sm sm:text-base">
                   🇨🇭 <span className="text-[#00B4D8]">{t('hero.badge1')}</span>
                 </span>
                 <span className="text-white/40">|</span>
-                <span className="flex items-center gap-2 text-white text-base">
+                <span className="flex items-center gap-1.5 sm:gap-2 text-white text-sm sm:text-base">
                   🤖 <span className="text-[#00B4D8]">{t('hero.badge2')}</span>
                 </span>
               </div>
@@ -66,20 +66,20 @@ export default function Home() {
             <p className="text-white/70 text-lg leading-relaxed mb-8 max-w-lg">
               {t('hero.subtitle')}
             </p>
-            <div className="flex gap-3 flex-wrap mb-10">
+            <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <Link href="/loesungen"
-                className="bg-[#0096C7] hover:bg-[#0077B6] text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,150,199,0.5)]">
+                className="bg-[#0096C7] hover:bg-[#0077B6] text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,150,199,0.5)] text-center">
                 {t('hero.ctaPrimary')}
               </Link>
               <Link href="/kontakt"
-                className="border-2 border-[rgba(0,180,216,0.45)] text-[#48CAE4] hover:border-[#00B4D8] hover:bg-[rgba(0,180,216,0.08)] px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200">
+                className="border-2 border-[rgba(0,180,216,0.45)] text-[#48CAE4] hover:border-[#00B4D8] hover:bg-[rgba(0,180,216,0.08)] px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200 text-center">
                 {t('hero.ctaSecondary')}
               </Link>
             </div>
-            <div className="flex gap-8 flex-wrap">
+            <div className="flex gap-4 sm:gap-8 flex-wrap">
               {[["32+",t('hero.stat1')],["5",t('hero.stat2')],["€0",t('hero.stat3')],["48h",t('hero.stat4')]].map(([n,l]) => (
                 <div key={l}>
-                  <span className="block text-[1.9rem] font-black text-[#00B4D8] tracking-tight leading-none">{n}</span>
+                  <span className="block text-2xl sm:text-[1.9rem] font-black text-[#00B4D8] tracking-tight leading-none">{n}</span>
                   <span className="text-white/55 text-xs mt-0.5 block">{l}</span>
                 </div>
               ))}
@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* PARTNER */}
-      <section className="py-8 px-4 bg-white border-b border-gray-100">
+      <section className="py-6 sm:py-8 px-4 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto">
           <p className="text-center text-xs tracking-[3px] uppercase text-gray-400 font-semibold mb-5">{t('partners.title')}</p>
           <div className="flex flex-wrap justify-center items-center gap-6">
@@ -149,7 +149,7 @@ export default function Home() {
       </section>
 
       {/* APPS */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <span className="inline-block bg-[rgba(0,150,199,0.08)] text-[#0096C7] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">{t('platformsSection.badge')}</span>
@@ -191,7 +191,7 @@ export default function Home() {
       </section>
 
       {/* FEATURES */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block bg-[rgba(0,150,199,0.08)] text-[#0096C7] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">{t('features.badge')}</span>
@@ -218,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* WHY */}
-      <section className="py-20 px-4 bg-[#0A1628] relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-[#0A1628] relative overflow-hidden">
         <div className="absolute inset-0" style={{background:"radial-gradient(circle at 80% 50%, rgba(0,180,216,0.11) 0%, transparent 55%)"}}/>
         <div className="max-w-7xl mx-auto relative z-10">
           <span className="inline-block bg-[rgba(0,180,216,0.18)] text-[#48CAE4] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">{t('why.badge')}</span>
@@ -263,14 +263,14 @@ export default function Home() {
       </section>
 
       {/* TARGETS */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block bg-[rgba(0,150,199,0.08)] text-[#0096C7] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">{t('targets.badge')}</span>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0A1628] tracking-tight mb-3">{t('targets.title')} <span className="text-[#0096C7]">{t('targets.titleHighlight')}</span></h2>
             <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">{t('targets.subtitle')}</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { icon: "💻", name: t('targets.items.0.name'), desc: t('targets.items.0.desc') },
               { icon: "🔨", name: t('targets.items.1.name'), desc: t('targets.items.1.desc') },
