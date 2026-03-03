@@ -61,6 +61,15 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="bg-gradient-to-br from-[#0A1628] via-[#0D1F3C] to-[#0a2a4a] py-24 px-4 relative overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          src="https://assets.cdn.filesafe.space/0beKz0TSeMQXqUf2fDg7/media/67da9e3926b50104b0a47a8b.mp4"
+        />
+        <div className="absolute inset-0 bg-[#0A1628] opacity-60" />
         <div className="absolute inset-0 opacity-50" style={{backgroundImage:"radial-gradient(circle at 20% 50%, rgba(0,180,216,0.14) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(0,150,199,0.09) 0%, transparent 40%)"}}/>
         <div className="absolute inset-0" style={{backgroundImage:"linear-gradient(rgba(0,180,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,180,216,0.04) 1px, transparent 1px)", backgroundSize:"52px 52px", WebkitMaskImage:"radial-gradient(ellipse 90% 90% at 50% 50%, black 30%, transparent 100%)"}}/>
         <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-16 items-center">
