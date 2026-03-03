@@ -115,19 +115,21 @@ export default function Home() {
       <section className="py-8 px-4 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto">
           <p className="text-center text-xs tracking-[3px] uppercase text-gray-400 font-semibold mb-5">Medien, Partner & Zertifizierungen</p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center items-center gap-6">
             {[
-              { name: "Fit for Fun", url: "https://www.fitforfun.de" },
-              { name: "Forbes", url: "https://www.forbes.com" },
-              { name: "Focus Online", url: "https://www.focus.de" },
-              { name: "KfW Partner", url: "https://www.kfw.de" },
-              { name: "Handelskammer D-CH", url: "https://www.handelskammer-d-ch.de" },
-              { name: "Business Angels Deutschland", url: "https://www.business-angels.de" },
-              { name: "Swiss Startup Association", url: "https://www.swissstartup.ch" },
-              { name: "Brands Wanted", url: "https://www.brandswanted.com" },
-              { name: "Unternehmen der Zukunft", url: "https://www.diind.de" },
+              { name: "Fit for Fun", url: "https://www.fitforfun.de", logo: "/logos/fitforfun.webp" },
+              { name: "Forbes", url: "https://www.forbes.com", logo: "/logos/forbes.webp" },
+              { name: "Focus Online", url: "https://www.focus.de", logo: "/logos/focus.webp" },
+              { name: "KfW Partner", url: "https://www.kfw.de", logo: "/logos/kfw.webp" },
+              { name: "Handelskammer D-CH", url: "https://www.handelskammer-d-ch.de", logo: "/logos/handelskammer.webp" },
+              { name: "Business Angels Deutschland", url: "https://www.business-angels.de", logo: "/logos/band.webp" },
+              { name: "Swiss Startup Association", url: "https://www.swissstartup.ch", logo: "/logos/swiss-startup.webp" },
+              { name: "Brands Wanted", url: "https://www.brandswanted.com", logo: "/logos/brands-wanted.webp" },
+              { name: "Unternehmen der Zukunft", url: "https://www.diind.de", logo: "/logos/unternehmen-zukunft.webp" },
             ].map(p => (
-              <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" className="text-gray-400 text-xs font-semibold border border-gray-200 hover:border-[#0096C7] hover:text-[#0096C7] px-4 py-2 rounded-lg transition-all duration-200 opacity-60 hover:opacity-100">{p.name}</a>
+              <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" className="grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-200 hover:scale-105">
+                <img src={p.logo} alt={p.name} className="h-8 w-auto object-contain" />
+              </a>
             ))}
           </div>
         </div>
