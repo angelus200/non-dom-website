@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teal: #00B4D8;
+  --teal-mid: #0096C7;
+  --teal-dark: #0077B6;
+  --teal-light: #48CAE4;
+  --navy: #0A1628;
+  --navy-light: #0D1F3C;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f0f4f8; }
+::-webkit-scrollbar-thumb { background: #0096C7; border-radius: 3px; }
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@layer utilities {
+  .text-teal { color: #0096C7; }
+  .text-teal-light { color: #48CAE4; }
+  .bg-navy { background-color: #0A1628; }
+  .bg-teal-mid { background-color: #0096C7; }
+  .border-teal { border-color: #00B4D8; }
+}
