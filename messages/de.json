@@ -1,0 +1,200 @@
+{
+  "nav": {
+    "solutions": "Lösungen",
+    "targetGroups": "Zielgruppen",
+    "webinars": "Webinare",
+    "contact": "Kontakt",
+    "phone": "0800 70 800 44"
+  },
+  "hero": {
+    "badge": "🇨🇭 Schweizer Qualität & Sicherheit | 🤖 Die KI für den Mittelstand",
+    "title": "Der #1",
+    "titleHighlight": "Unternehmer",
+    "titleEnd": "Marktplatz",
+    "description": "KI-gestützte Plattformen, automatisierte Workflows und ein Netzwerk aus 32+ europäischen Unternehmen — ab sofort kostenlos.",
+    "ctaPrimary": "Alle Lösungen ansehen →",
+    "ctaSecondary": "Kontakt aufnehmen",
+    "platformsTitle": "🚀 Unsere KI-Plattformen",
+    "stats": {
+      "companies": "Unternehmen",
+      "platforms": "KI-Plattformen",
+      "freeStart": "Kostenloser Start",
+      "results": "Erste Ergebnisse"
+    }
+  },
+  "platforms": {
+    "businessAngel": {
+      "name": "Business Angel App",
+      "tags": ["Investment", "Deal-Flow", "KI-Matching"]
+    },
+    "immoPortal": {
+      "name": "ImmoPortal",
+      "tags": ["Immobilien", "Refinanzierung", "KI-Analyse"]
+    },
+    "accounting": {
+      "name": "Buchhaltung KI",
+      "tags": ["Buchhaltung", "DATEV", "Automatisierung"]
+    },
+    "ecommerce": {
+      "name": "E-Commerce Rente",
+      "tags": ["Amazon FBA", "Passives Einkommen", "B2B"]
+    },
+    "optimization": {
+      "name": "Unternehmensoptimierung",
+      "tags": ["Holding", "Vermögensschutz"]
+    },
+    "more": {
+      "name": "Weitere KI-Apps",
+      "status": "In Entwicklung",
+      "tags": ["Coming Soon"]
+    }
+  },
+  "partners": {
+    "title": "Medien, Partner & Zertifizierungen"
+  },
+  "platformsSection": {
+    "badge": "KI-Ökosystem",
+    "title": "Unsere",
+    "titleHighlight": "5 spezialisierten",
+    "titleEnd": "Plattformen",
+    "description": "Jede Plattform löst ein konkretes Mittelstandsproblem — gemeinsam das vollständigste Unternehmer-Ökosystem Deutschlands.",
+    "comingSoon": "Demnächst"
+  },
+  "features": {
+    "badge": "KI-Technologie",
+    "title": "Intelligenz, die für Sie",
+    "titleHighlight": "arbeitet",
+    "description": "DSGVO-konform, speziell für den deutschen Mittelstand — sofort einsatzbereit.",
+    "items": [
+      {
+        "title": "KI-Unternehmensanalyse",
+        "description": "Vollautomatische Analyse mit konkreten Handlungsempfehlungen in Echtzeit."
+      },
+      {
+        "title": "Dokumenten-KI",
+        "description": "Verträge, Rechnungen, Formulare — klassifiziert und verarbeitet automatisch."
+      },
+      {
+        "title": "KI-Berater 24/7",
+        "description": "Persönlicher KI-Berater für steuerliche, rechtliche und operative Fragen."
+      },
+      {
+        "title": "Automatisierte Workflows",
+        "description": "Einmal konfigurieren, dauerhaft automatisieren. Repetitive Aufgaben entfallen."
+      },
+      {
+        "title": "Zentrales Dashboard",
+        "description": "Alle KPIs, Daten und KI-Auswertungen in einem übersichtlichen Command Center."
+      },
+      {
+        "title": "DSGVO-konform",
+        "description": "Ihre Daten bleiben in Deutschland. ISO-zertifizierte Infrastruktur."
+      }
+    ]
+  },
+  "why": {
+    "badge": "Warum NON DOM Group",
+    "title": "Das smarteste System für den",
+    "titleHighlight": "Mittelstand",
+    "benefits": [
+      {
+        "title": "Europäisches Netzwerk",
+        "description": "32+ Unternehmen in ganz Europa — einzigartiges Know-how und Netzwerkeffekte."
+      },
+      {
+        "title": "Spezialisierte KI-Plattformen",
+        "description": "Jede Plattform löst echte Mittelstandsprobleme mit modernster KI — keine Generallösung."
+      },
+      {
+        "title": "Vollständige Integration",
+        "description": "Ein Login, ein Dashboard — alle Plattformen kommunizieren miteinander."
+      },
+      {
+        "title": "Unschlagbares Preis-Leistungs-Verhältnis",
+        "description": "Kostenloser Einstieg. Premium-Features ab einem Bruchteil vergleichbarer Lösungen."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Kostenlos registrieren",
+        "description": "In 2 Minuten angemeldet. Keine Kreditkarte."
+      },
+      {
+        "title": "Unternehmensprofil anlegen",
+        "description": "KI analysiert Ihre Branche und erstellt ein personalisiertes Optimierungsprofil."
+      },
+      {
+        "title": "Plattformen aktivieren",
+        "description": "Die relevanten KI-Plattformen auswählen — einzeln oder im Bundle."
+      },
+      {
+        "title": "Workflows automatisieren",
+        "description": "KI übernimmt repetitive Aufgaben und optimiert täglich."
+      },
+      {
+        "title": "Ergebnisse messen",
+        "description": "ROI im Dashboard sehen. Erste Ergebnisse nach 48 Stunden."
+      }
+    ]
+  },
+  "targets": {
+    "badge": "Zielgruppen",
+    "title": "Für jeden Unternehmer die",
+    "titleHighlight": "passende Lösung",
+    "description": "Ob Einzelunternehmer oder Mittelständler — unsere KI-Plattform passt sich Ihrer Branche an.",
+    "groups": [
+      {
+        "name": "Selbstständige",
+        "description": "Automatisierung vom ersten Tag"
+      },
+      {
+        "name": "Handwerk",
+        "description": "Digitalisierung leicht gemacht"
+      },
+      {
+        "name": "E-Commerce",
+        "description": "Skalierung mit KI-Power"
+      },
+      {
+        "name": "Transport",
+        "description": "Logistik & Routen optimieren"
+      },
+      {
+        "name": "Startups",
+        "description": "Investor-Matching & Funding"
+      },
+      {
+        "name": "Berater",
+        "description": "KI als strategischen Partner"
+      },
+      {
+        "name": "Gastronomie",
+        "description": "Kosten senken, Prozesse straffen"
+      },
+      {
+        "name": "Immobilien",
+        "description": "Portfolio analysieren & optimieren"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Deutschlands #1 KI Mittelstands-Plattform. 32+ Unternehmen in ganz Europa durch modernste KI-Technologie vernetzt.",
+    "phone": "0800 70 800 44",
+    "telegram": "Telegram: @nondomgroup",
+    "contactForm": "Kontaktformular",
+    "platforms": "Plattformen",
+    "company": "Unternehmen",
+    "contact": "Kontakt",
+    "telegramCommunity": "Telegram Community",
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutzerklärung",
+    "terms": "AGB",
+    "copyright": "© 2025 NON DOM Group. Alle Rechte vorbehalten."
+  },
+  "metadata": {
+    "title": "NON DOM Group – Der #1 Unternehmer Marktplatz",
+    "description": "KI-gestützte Plattformen, automatisierte Workflows und ein Netzwerk aus 32+ europäischen Unternehmen.",
+    "siteName": "NON DOM Group"
+  }
+}

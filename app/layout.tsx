@@ -1,28 +1,32 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
+import {notFound} from 'next/navigation';
+import {routing} from '@/i18n/routing';
 
-export const metadata: Metadata = {
-  title: "NON DOM Group – Der #1 Unternehmer Marktplatz",
-  description: "KI-gestützte Plattformen, automatisierte Workflows und ein Netzwerk aus 32+ europäischen Unternehmen.",
-  openGraph: {
-    title: "NON DOM Group – Der #1 Unternehmer Marktplatz",
-    description: "5 spezialisierte KI-Plattformen für den deutschen Mittelstand.",
-    url: "https://non-dom.group",
-    siteName: "NON DOM Group",
-    locale: "de_DE",
-    type: "website",
-  },
-};
+export default async function RootLayout({
+  children,
+  params
+}: {
+  children: React.ReactNode;
+  params: Promise<{locale: string}>;
+}) {
+  const {locale} = await params;
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
+
   return (
-    <html lang="de">
+    <html lang={locale}>
       <body className="antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

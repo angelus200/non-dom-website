@@ -1,0 +1,200 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "targetGroups": "Target Groups",
+    "webinars": "Webinars",
+    "contact": "Contact",
+    "phone": "+41 800 70 800 44"
+  },
+  "hero": {
+    "badge": "🇨🇭 Swiss Quality & Security | 🤖 AI for SMEs",
+    "title": "The #1",
+    "titleHighlight": "Business",
+    "titleEnd": "Marketplace",
+    "description": "AI-powered platforms, automated workflows, and a network of 32+ European companies — available now for free.",
+    "ctaPrimary": "View All Solutions →",
+    "ctaSecondary": "Get in Touch",
+    "platformsTitle": "🚀 Our AI Platforms",
+    "stats": {
+      "companies": "Companies",
+      "platforms": "AI Platforms",
+      "freeStart": "Free Start",
+      "results": "First Results"
+    }
+  },
+  "platforms": {
+    "businessAngel": {
+      "name": "Business Angel App",
+      "tags": ["Investment", "Deal Flow", "AI Matching"]
+    },
+    "immoPortal": {
+      "name": "ImmoPortal",
+      "tags": ["Real Estate", "Refinancing", "AI Analysis"]
+    },
+    "accounting": {
+      "name": "Accounting AI",
+      "tags": ["Accounting", "DATEV", "Automation"]
+    },
+    "ecommerce": {
+      "name": "E-Commerce Pension",
+      "tags": ["Amazon FBA", "Passive Income", "B2B"]
+    },
+    "optimization": {
+      "name": "Business Optimization",
+      "tags": ["Holding", "Asset Protection"]
+    },
+    "more": {
+      "name": "More AI Apps",
+      "status": "In Development",
+      "tags": ["Coming Soon"]
+    }
+  },
+  "partners": {
+    "title": "Media, Partners & Certifications"
+  },
+  "platformsSection": {
+    "badge": "AI Ecosystem",
+    "title": "Our",
+    "titleHighlight": "5 specialized",
+    "titleEnd": "Platforms",
+    "description": "Each platform solves a specific SME problem — together forming Germany's most comprehensive business ecosystem.",
+    "comingSoon": "Coming Soon"
+  },
+  "features": {
+    "badge": "AI Technology",
+    "title": "Intelligence that",
+    "titleHighlight": "works for you",
+    "description": "GDPR-compliant, specifically designed for German SMEs — ready to use immediately.",
+    "items": [
+      {
+        "title": "AI Business Analysis",
+        "description": "Fully automated analysis with concrete recommendations in real-time."
+      },
+      {
+        "title": "Document AI",
+        "description": "Contracts, invoices, forms — automatically classified and processed."
+      },
+      {
+        "title": "AI Consultant 24/7",
+        "description": "Personal AI consultant for tax, legal, and operational questions."
+      },
+      {
+        "title": "Automated Workflows",
+        "description": "Configure once, automate forever. Repetitive tasks eliminated."
+      },
+      {
+        "title": "Central Dashboard",
+        "description": "All KPIs, data, and AI evaluations in one clear command center."
+      },
+      {
+        "title": "GDPR Compliant",
+        "description": "Your data stays in Germany. ISO-certified infrastructure."
+      }
+    ]
+  },
+  "why": {
+    "badge": "Why NON DOM Group",
+    "title": "The smartest system for",
+    "titleHighlight": "SMEs",
+    "benefits": [
+      {
+        "title": "European Network",
+        "description": "32+ companies across Europe — unique know-how and network effects."
+      },
+      {
+        "title": "Specialized AI Platforms",
+        "description": "Each platform solves real SME problems with cutting-edge AI — no one-size-fits-all solution."
+      },
+      {
+        "title": "Complete Integration",
+        "description": "One login, one dashboard — all platforms communicate with each other."
+      },
+      {
+        "title": "Unbeatable Value",
+        "description": "Free entry. Premium features at a fraction of comparable solutions."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Register for Free",
+        "description": "Signed up in 2 minutes. No credit card required."
+      },
+      {
+        "title": "Create Business Profile",
+        "description": "AI analyzes your industry and creates a personalized optimization profile."
+      },
+      {
+        "title": "Activate Platforms",
+        "description": "Select the relevant AI platforms — individually or as a bundle."
+      },
+      {
+        "title": "Automate Workflows",
+        "description": "AI takes over repetitive tasks and optimizes daily."
+      },
+      {
+        "title": "Measure Results",
+        "description": "See ROI in the dashboard. First results after 48 hours."
+      }
+    ]
+  },
+  "targets": {
+    "badge": "Target Groups",
+    "title": "The right solution for",
+    "titleHighlight": "every business",
+    "description": "Whether sole proprietor or medium-sized company — our AI platform adapts to your industry.",
+    "groups": [
+      {
+        "name": "Freelancers",
+        "description": "Automation from day one"
+      },
+      {
+        "name": "Craftsmen",
+        "description": "Digitalization made easy"
+      },
+      {
+        "name": "E-Commerce",
+        "description": "Scale with AI power"
+      },
+      {
+        "name": "Transport",
+        "description": "Optimize logistics & routes"
+      },
+      {
+        "name": "Startups",
+        "description": "Investor matching & funding"
+      },
+      {
+        "name": "Consultants",
+        "description": "AI as strategic partner"
+      },
+      {
+        "name": "Gastronomy",
+        "description": "Reduce costs, streamline processes"
+      },
+      {
+        "name": "Real Estate",
+        "description": "Analyze & optimize portfolio"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Germany's #1 AI SME platform. 32+ companies across Europe connected through cutting-edge AI technology.",
+    "phone": "+41 800 70 800 44",
+    "telegram": "Telegram: @nondomgroup",
+    "contactForm": "Contact Form",
+    "platforms": "Platforms",
+    "company": "Company",
+    "contact": "Contact",
+    "telegramCommunity": "Telegram Community",
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "copyright": "© 2025 NON DOM Group. All rights reserved."
+  },
+  "metadata": {
+    "title": "NON DOM Group – The #1 Business Marketplace",
+    "description": "AI-powered platforms, automated workflows, and a network of 32+ European companies.",
+    "siteName": "NON DOM Group"
+  }
+}

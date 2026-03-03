@@ -1,6 +1,10 @@
-import Link from "next/link";
+"use client";
+import {Link} from "@/i18n/routing";
+import {useTranslations} from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations('footer');
+
   return (
     <footer className="bg-[#0A1628] border-t-4 border-[#0096C7] pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -11,12 +15,12 @@ export default function Footer() {
               <img src="/logos/non-dom-logo.webp" alt="NON DOM GROUP" className="h-10 w-auto" />
             </div>
             <p className="text-white/45 text-sm leading-relaxed max-w-[270px]">
-              Deutschlands #1 KI Mittelstands-Plattform. 32+ Unternehmen in ganz Europa durch modernste KI-Technologie vernetzt.
+              {t('description')}
             </p>
             <div className="mt-5 flex flex-col gap-2">
-              <a href="tel:080070800044" className="text-[#48CAE4] text-sm hover:opacity-70 transition-opacity">📞 0800 70 800 44</a>
-              <a href="https://t.me/nondomgroup" target="_blank" rel="noopener noreferrer" className="text-[#48CAE4] text-sm hover:opacity-70 transition-opacity">💬 Telegram: @nondomgroup</a>
-              <a href="/kontakt" className="text-[#48CAE4] text-sm hover:opacity-70 transition-opacity">✉️ Kontaktformular</a>
+              <a href={`tel:${t('phone')}`} className="text-[#48CAE4] text-sm hover:opacity-70 transition-opacity">📞 {t('phone')}</a>
+              <a href="https://t.me/nondomgroup" target="_blank" rel="noopener noreferrer" className="text-[#48CAE4] text-sm hover:opacity-70 transition-opacity">💬 {t('telegram')}</a>
+              <Link href="/kontakt" className="text-[#48CAE4] text-sm hover:opacity-70 transition-opacity">✉️ {t('contactForm')}</Link>
             </div>
             <div className="mt-5 flex gap-4">
               <a href="https://www.linkedin.com/company/non-dom-group/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#00B4D8] transition-colors">
@@ -34,7 +38,7 @@ export default function Footer() {
 
           {/* Plattformen */}
           <div>
-            <h4 className="text-[#00B4D8] text-xs font-bold tracking-widest uppercase mb-4">Plattformen</h4>
+            <h4 className="text-[#00B4D8] text-xs font-bold tracking-widest uppercase mb-4">{t('platforms')}</h4>
             {[
               { href: "https://www.businessangel.app", label: "Business Angel App" },
               { href: "https://portal.immoportal.app", label: "ImmoPortal" },
@@ -51,48 +55,43 @@ export default function Footer() {
 
           {/* Unternehmen */}
           <div>
-            <h4 className="text-[#00B4D8] text-xs font-bold tracking-widest uppercase mb-4">Unternehmen</h4>
-            {[
-              { href: "/kontakt", label: "Kontakt" },
-              { href: "https://t.me/nondomgroup", label: "Telegram Community" },
-            ].map((l) => (
-              <a key={l.href} href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined}
-                rel="noopener noreferrer"
-                className="block text-white/50 hover:text-white text-sm mb-2 transition-colors duration-200">
-                {l.label}
-              </a>
-            ))}
+            <h4 className="text-[#00B4D8] text-xs font-bold tracking-widest uppercase mb-4">{t('company')}</h4>
+            <Link href="/kontakt" className="block text-white/50 hover:text-white text-sm mb-2 transition-colors duration-200">
+              {t('contact')}
+            </Link>
+            <a href="https://t.me/nondomgroup" target="_blank" rel="noopener noreferrer" className="block text-white/50 hover:text-white text-sm mb-2 transition-colors duration-200">
+              {t('telegramCommunity')}
+            </a>
           </div>
 
           {/* Rechtliches */}
           <div>
-            <h4 className="text-[#00B4D8] text-xs font-bold tracking-widest uppercase mb-4">Rechtliches</h4>
-            {[
-              { href: "/impressum", label: "Impressum" },
-              { href: "/datenschutz", label: "Datenschutzerklärung" },
-              { href: "/agb", label: "AGB" },
-            ].map((l) => (
-              <Link key={l.href} href={l.href}
-                className="block text-white/50 hover:text-white text-sm mb-2 transition-colors duration-200">
-                {l.label}
-              </Link>
-            ))}
+            <h4 className="text-[#00B4D8] text-xs font-bold tracking-widest uppercase mb-4">{t('legal')}</h4>
+            <Link href="/impressum" className="block text-white/50 hover:text-white text-sm mb-2 transition-colors duration-200">
+              {t('imprint')}
+            </Link>
+            <Link href="/datenschutz" className="block text-white/50 hover:text-white text-sm mb-2 transition-colors duration-200">
+              {t('privacy')}
+            </Link>
+            <Link href="/agb" className="block text-white/50 hover:text-white text-sm mb-2 transition-colors duration-200">
+              {t('terms')}
+            </Link>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <span className="text-white/35 text-xs">© 2025 NON DOM Group. Alle Rechte vorbehalten.</span>
+          <span className="text-white/35 text-xs">{t('copyright')}</span>
           <div className="flex gap-5">
-            {[
-              { href: "/impressum", label: "Impressum" },
-              { href: "/datenschutz", label: "Datenschutz" },
-              { href: "/agb", label: "AGB" },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-white/35 hover:text-[#00B4D8] text-xs transition-colors duration-200">
-                {l.label}
-              </Link>
-            ))}
+            <Link href="/impressum" className="text-white/35 hover:text-[#00B4D8] text-xs transition-colors duration-200">
+              {t('imprint')}
+            </Link>
+            <Link href="/datenschutz" className="text-white/35 hover:text-[#00B4D8] text-xs transition-colors duration-200">
+              {t('privacy')}
+            </Link>
+            <Link href="/agb" className="text-white/35 hover:text-[#00B4D8] text-xs transition-colors duration-200">
+              {t('terms')}
+            </Link>
           </div>
         </div>
       </div>
