@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 const apps = [
-  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/6c1a060c-ffc4-4e36-4132-8a1e5ce36001/public", name: "Business Angel App", url: "businessangel.app", href: "https://www.businessangel.app", tags: ["Investment", "Deal-Flow", "KI-Matching"] },
+  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/a2d19a68-3aec-422e-6d2b-b4087c2e7d00/public", name: "Business Angel App", url: "businessangel.app", href: "https://www.businessangel.app", tags: ["Investment", "Deal-Flow", "KI-Matching"] },
   { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/80501913-9d72-4804-335e-de63063c1800/public", name: "ImmoPortal", url: "immoportal.app", href: "https://portal.immoportal.app", tags: ["Immobilien", "Refinanzierung", "KI-Analyse"] },
   { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/c582d6ad-dd7a-4aed-584f-5e9ace690900/public", name: "Buchhaltung KI", url: "buchhaltung-ki.app", href: "https://www.buchhaltung-ki.app", tags: ["Buchhaltung", "DATEV", "Automatisierung"] },
   { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/0201a548-ba53-4eb9-d265-183dc763d400/public", name: "E-Commerce Rente", url: "ecommercerente.com", href: "https://www.ecommercerente.com", tags: ["Amazon FBA", "Passives Einkommen", "B2B"] },
