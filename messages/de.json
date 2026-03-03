@@ -6,176 +6,341 @@
     "contact": "Kontakt",
     "phone": "0800 70 800 44"
   },
-  "hero": {
-    "badge": "🇨🇭 Schweizer Qualität & Sicherheit | 🤖 Die KI für den Mittelstand",
-    "title": "Der #1",
-    "titleHighlight": "Unternehmer",
-    "titleEnd": "Marktplatz",
-    "description": "KI-gestützte Plattformen, automatisierte Workflows und ein Netzwerk aus 32+ europäischen Unternehmen — ab sofort kostenlos.",
-    "ctaPrimary": "Alle Lösungen ansehen →",
-    "ctaSecondary": "Kontakt aufnehmen",
-    "platformsTitle": "🚀 Unsere KI-Plattformen",
-    "stats": {
-      "companies": "Unternehmen",
-      "platforms": "KI-Plattformen",
-      "freeStart": "Kostenloser Start",
-      "results": "Erste Ergebnisse"
+  "home": {
+    "hero": {
+      "badge1": "Schweizer Qualität & Sicherheit",
+      "badge2": "Die KI für den Mittelstand",
+      "title": "Der #1",
+      "titleHighlight": "Unternehmer",
+      "titleLine2": "Marktplatz",
+      "subtitle": "KI-gestützte Plattformen, automatisierte Workflows und ein Netzwerk aus 32+ europäischen Unternehmen — ab sofort kostenlos.",
+      "ctaPrimary": "Alle Lösungen ansehen →",
+      "ctaSecondary": "Kontakt aufnehmen",
+      "platformsTitle": "🚀 Unsere KI-Plattformen",
+      "stat1": "Unternehmen",
+      "stat2": "KI-Plattformen",
+      "stat3": "Kostenloser Start",
+      "stat4": "Erste Ergebnisse"
+    },
+    "platforms": {
+      "app1": {
+        "tags": "Investment · Deal-Flow · KI-Matching"
+      },
+      "app2": {
+        "tags": "Immobilien · Refinanzierung · KI-Analyse"
+      },
+      "app3": {
+        "tags": "Buchhaltung · DATEV · Automatisierung"
+      },
+      "app4": {
+        "tags": "Amazon FBA · Passives Einkommen · B2B"
+      },
+      "app5": {
+        "tags": "Holding · Vermögensschutz"
+      },
+      "app6": {
+        "name": "Weitere KI-Apps",
+        "url": "In Entwicklung",
+        "tags": "Coming Soon"
+      }
+    },
+    "partners": {
+      "title": "Medien, Partner & Zertifizierungen"
+    },
+    "platformsSection": {
+      "badge": "KI-Ökosystem",
+      "title": "Unsere",
+      "titleHighlight": "5 spezialisierten",
+      "titleEnd": "Plattformen",
+      "subtitle": "Jede Plattform löst ein konkretes Mittelstandsproblem — gemeinsam das vollständigste Unternehmer-Ökosystem Deutschlands.",
+      "comingSoon": "Demnächst"
+    },
+    "features": {
+      "badge": "KI-Technologie",
+      "title": "Intelligenz, die für Sie",
+      "titleHighlight": "arbeitet",
+      "subtitle": "DSGVO-konform, speziell für den deutschen Mittelstand — sofort einsatzbereit.",
+      "items": [
+        {
+          "title": "KI-Unternehmensanalyse",
+          "desc": "Vollautomatische Analyse mit konkreten Handlungsempfehlungen in Echtzeit."
+        },
+        {
+          "title": "Dokumenten-KI",
+          "desc": "Verträge, Rechnungen, Formulare — klassifiziert und verarbeitet automatisch."
+        },
+        {
+          "title": "KI-Berater 24/7",
+          "desc": "Persönlicher KI-Berater für steuerliche, rechtliche und operative Fragen."
+        },
+        {
+          "title": "Automatisierte Workflows",
+          "desc": "Einmal konfigurieren, dauerhaft automatisieren. Repetitive Aufgaben entfallen."
+        },
+        {
+          "title": "Zentrales Dashboard",
+          "desc": "Alle KPIs, Daten und KI-Auswertungen in einem übersichtlichen Command Center."
+        },
+        {
+          "title": "DSGVO-konform",
+          "desc": "Ihre Daten bleiben in Deutschland. ISO-zertifizierte Infrastruktur."
+        }
+      ]
+    },
+    "why": {
+      "badge": "Warum NON DOM Group",
+      "title": "Das smarteste System für den",
+      "titleHighlight": "Mittelstand",
+      "reasons": [
+        {
+          "title": "Europäisches Netzwerk",
+          "desc": "32+ Unternehmen in ganz Europa — einzigartiges Know-how und Netzwerkeffekte."
+        },
+        {
+          "title": "Spezialisierte KI-Plattformen",
+          "desc": "Jede Plattform löst echte Mittelstandsprobleme mit modernster KI — keine Generallösung."
+        },
+        {
+          "title": "Vollständige Integration",
+          "desc": "Ein Login, ein Dashboard — alle Plattformen kommunizieren miteinander."
+        },
+        {
+          "title": "Unschlagbares Preis-Leistungs-Verhältnis",
+          "desc": "Kostenloser Einstieg. Premium-Features ab einem Bruchteil vergleichbarer Lösungen."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Kostenlos registrieren",
+          "desc": "In 2 Minuten angemeldet. Keine Kreditkarte."
+        },
+        {
+          "title": "Unternehmensprofil anlegen",
+          "desc": "KI analysiert Ihre Branche und erstellt ein personalisiertes Optimierungsprofil."
+        },
+        {
+          "title": "Plattformen aktivieren",
+          "desc": "Die relevanten KI-Plattformen auswählen — einzeln oder im Bundle."
+        },
+        {
+          "title": "Workflows automatisieren",
+          "desc": "KI übernimmt repetitive Aufgaben und optimiert täglich."
+        },
+        {
+          "title": "Ergebnisse messen",
+          "desc": "ROI im Dashboard sehen. Erste Ergebnisse nach 48 Stunden."
+        }
+      ]
+    },
+    "targets": {
+      "badge": "Zielgruppen",
+      "title": "Für jeden Unternehmer die",
+      "titleHighlight": "passende Lösung",
+      "subtitle": "Ob Einzelunternehmer oder Mittelständler — unsere KI-Plattform passt sich Ihrer Branche an.",
+      "items": [
+        {
+          "name": "Selbstständige",
+          "desc": "Automatisierung vom ersten Tag"
+        },
+        {
+          "name": "Handwerk",
+          "desc": "Digitalisierung leicht gemacht"
+        },
+        {
+          "name": "E-Commerce",
+          "desc": "Skalierung mit KI-Power"
+        },
+        {
+          "name": "Transport",
+          "desc": "Logistik & Routen optimieren"
+        },
+        {
+          "name": "Startups",
+          "desc": "Investor-Matching & Funding"
+        },
+        {
+          "name": "Berater",
+          "desc": "KI als strategischen Partner"
+        },
+        {
+          "name": "Gastronomie",
+          "desc": "Kosten senken, Prozesse straffen"
+        },
+        {
+          "name": "Immobilien",
+          "desc": "Portfolio analysieren & optimieren"
+        }
+      ]
     }
   },
-  "platforms": {
-    "businessAngel": {
-      "name": "Business Angel App",
-      "tags": ["Investment", "Deal-Flow", "KI-Matching"]
-    },
-    "immoPortal": {
-      "name": "ImmoPortal",
-      "tags": ["Immobilien", "Refinanzierung", "KI-Analyse"]
-    },
-    "accounting": {
-      "name": "Buchhaltung KI",
-      "tags": ["Buchhaltung", "DATEV", "Automatisierung"]
-    },
-    "ecommerce": {
-      "name": "E-Commerce Rente",
-      "tags": ["Amazon FBA", "Passives Einkommen", "B2B"]
-    },
-    "optimization": {
-      "name": "Unternehmensoptimierung",
-      "tags": ["Holding", "Vermögensschutz"]
-    },
-    "more": {
-      "name": "Weitere KI-Apps",
-      "status": "In Entwicklung",
-      "tags": ["Coming Soon"]
-    }
-  },
-  "partners": {
-    "title": "Medien, Partner & Zertifizierungen"
-  },
-  "platformsSection": {
+  "solutions": {
     "badge": "KI-Ökosystem",
     "title": "Unsere",
-    "titleHighlight": "5 spezialisierten",
-    "titleEnd": "Plattformen",
-    "description": "Jede Plattform löst ein konkretes Mittelstandsproblem — gemeinsam das vollständigste Unternehmer-Ökosystem Deutschlands.",
-    "comingSoon": "Demnächst"
-  },
-  "features": {
-    "badge": "KI-Technologie",
-    "title": "Intelligenz, die für Sie",
-    "titleHighlight": "arbeitet",
-    "description": "DSGVO-konform, speziell für den deutschen Mittelstand — sofort einsatzbereit.",
-    "items": [
+    "titleHighlight": "Lösungen",
+    "subtitle": "5 spezialisierte KI-Plattformen — jede löst ein konkretes Mittelstandsproblem.",
+    "apps": [
       {
-        "title": "KI-Unternehmensanalyse",
-        "description": "Vollautomatische Analyse mit konkreten Handlungsempfehlungen in Echtzeit."
+        "tags": "Investment · Deal-Flow · KI-Matching",
+        "desc": "Verbinden Sie sich mit Business Angels, optimieren Sie Ihren Deal-Flow und finden Sie durch KI-Matching die richtigen Investoren für Ihr Unternehmen."
       },
       {
-        "title": "Dokumenten-KI",
-        "description": "Verträge, Rechnungen, Formulare — klassifiziert und verarbeitet automatisch."
+        "tags": "Immobilien · Refinanzierung · KI-Analyse",
+        "desc": "KI-gestützte Immobilienanalyse, automatisierte Bewertungen und smarte Refinanzierungsstrategien für Ihr Immobilienportfolio."
       },
       {
-        "title": "KI-Berater 24/7",
-        "description": "Persönlicher KI-Berater für steuerliche, rechtliche und operative Fragen."
+        "tags": "Buchhaltung · DATEV · Automatisierung",
+        "desc": "Vollautomatische Buchhaltung mit DATEV-Integration. Rechnungen, Belege und Jahresabschluss — von der KI erledigt."
       },
       {
-        "title": "Automatisierte Workflows",
-        "description": "Einmal konfigurieren, dauerhaft automatisieren. Repetitive Aufgaben entfallen."
+        "tags": "Amazon FBA · Passives Einkommen · B2B",
+        "desc": "Aufbau eines automatisierten Amazon FBA-Business als passives Einkommensmodell — mit KI-optimierter Produktauswahl."
       },
       {
-        "title": "Zentrales Dashboard",
-        "description": "Alle KPIs, Daten und KI-Auswertungen in einem übersichtlichen Command Center."
-      },
-      {
-        "title": "DSGVO-konform",
-        "description": "Ihre Daten bleiben in Deutschland. ISO-zertifizierte Infrastruktur."
+        "tags": "Holding · Vermögensschutz · Optimierung",
+        "desc": "Strukturierung Ihrer Unternehmensgruppe als Holding, Vermögensschutz und steuerliche Optimierung durch KI-Analyse."
       }
     ]
   },
-  "why": {
-    "badge": "Warum NON DOM Group",
-    "title": "Das smarteste System für den",
-    "titleHighlight": "Mittelstand",
-    "benefits": [
-      {
-        "title": "Europäisches Netzwerk",
-        "description": "32+ Unternehmen in ganz Europa — einzigartiges Know-how und Netzwerkeffekte."
-      },
-      {
-        "title": "Spezialisierte KI-Plattformen",
-        "description": "Jede Plattform löst echte Mittelstandsprobleme mit modernster KI — keine Generallösung."
-      },
-      {
-        "title": "Vollständige Integration",
-        "description": "Ein Login, ein Dashboard — alle Plattformen kommunizieren miteinander."
-      },
-      {
-        "title": "Unschlagbares Preis-Leistungs-Verhältnis",
-        "description": "Kostenloser Einstieg. Premium-Features ab einem Bruchteil vergleichbarer Lösungen."
-      }
-    ],
-    "steps": [
-      {
-        "title": "Kostenlos registrieren",
-        "description": "In 2 Minuten angemeldet. Keine Kreditkarte."
-      },
-      {
-        "title": "Unternehmensprofil anlegen",
-        "description": "KI analysiert Ihre Branche und erstellt ein personalisiertes Optimierungsprofil."
-      },
-      {
-        "title": "Plattformen aktivieren",
-        "description": "Die relevanten KI-Plattformen auswählen — einzeln oder im Bundle."
-      },
-      {
-        "title": "Workflows automatisieren",
-        "description": "KI übernimmt repetitive Aufgaben und optimiert täglich."
-      },
-      {
-        "title": "Ergebnisse messen",
-        "description": "ROI im Dashboard sehen. Erste Ergebnisse nach 48 Stunden."
-      }
-    ]
-  },
-  "targets": {
+  "targetGroups": {
     "badge": "Zielgruppen",
-    "title": "Für jeden Unternehmer die",
-    "titleHighlight": "passende Lösung",
-    "description": "Ob Einzelunternehmer oder Mittelständler — unsere KI-Plattform passt sich Ihrer Branche an.",
+    "title": "Für jeden",
+    "titleHighlight": "Unternehmer",
+    "subtitle": "Unsere KI-Plattform passt sich Ihrer Branche und Unternehmensgröße an.",
     "groups": [
       {
-        "name": "Selbstständige",
-        "description": "Automatisierung vom ersten Tag"
+        "name": "Selbstständige & Freiberufler",
+        "desc": "Als Einzelkämpfer haben Sie wenig Zeit für Administration. Unsere KI automatisiert Buchhaltung, Rechnungsstellung und Kundenkommunikation — damit Sie sich auf Ihr Kerngeschäft konzentrieren können.",
+        "benefits": ["Automatische Rechnungsstellung", "KI-Buchhaltung ohne Steuerberater", "Zeitersparnis bis zu 15h/Woche"]
       },
       {
-        "name": "Handwerk",
-        "description": "Digitalisierung leicht gemacht"
+        "name": "Handwerk & Gewerbe",
+        "desc": "Digitalisierung muss nicht kompliziert sein. Unsere Plattformen helfen Handwerksbetrieben, effizienter zu arbeiten und mehr Aufträge zu gewinnen.",
+        "benefits": ["Digitale Auftragsabwicklung", "Automatisierte Angebotserstellung", "Kundenverwaltung mit KI"]
       },
       {
-        "name": "E-Commerce",
-        "description": "Skalierung mit KI-Power"
+        "name": "E-Commerce & Handel",
+        "desc": "Skalieren Sie Ihr Online-Business mit KI-Power. Von Amazon FBA bis zur eigenen Shop-Optimierung — wir haben die passende Lösung.",
+        "benefits": ["Amazon FBA Automatisierung", "KI-Produktanalyse", "Passive Einkommensströme"]
       },
       {
-        "name": "Transport",
-        "description": "Logistik & Routen optimieren"
+        "name": "Transport & Logistik",
+        "desc": "Optimieren Sie Routen, Fuhrpark und Auftragsmanagement mit intelligenter KI — und sparen Sie Kosten bei jedem Kilometer.",
+        "benefits": ["Routenoptimierung", "Flottenmanagement", "Automatisierte Auftragsverteilung"]
       },
       {
-        "name": "Startups",
-        "description": "Investor-Matching & Funding"
+        "name": "Startups & Scale-ups",
+        "desc": "Investor-Matching, Pitchdeck-Analyse und Netzwerk zu Business Angels — alles was Sie für Ihre Wachstumsphase brauchen.",
+        "benefits": ["Business Angel Matching", "KI-Pitchdeck-Analyse", "Investoren-Netzwerk"]
       },
       {
-        "name": "Berater",
-        "description": "KI als strategischen Partner"
+        "name": "Berater & Coaches",
+        "desc": "Nutzen Sie KI als strategischen Partner. Analysieren Sie Kundendaten, automatisieren Sie Berichte und gewinnen Sie mehr Klienten.",
+        "benefits": ["KI-gestützte Analysen", "Automatisierte Berichte", "Kunden-Akquise optimieren"]
       },
       {
-        "name": "Gastronomie",
-        "description": "Kosten senken, Prozesse straffen"
+        "name": "Gastronomie & Hotellerie",
+        "desc": "Von der Buchhaltung bis zur Mitarbeiterplanung — KI hilft Ihnen, Kosten zu senken und den Betrieb effizienter zu gestalten.",
+        "benefits": ["Kostenoptimierung", "Digitale Buchhaltung", "Mitarbeiterplanung mit KI"]
       },
       {
-        "name": "Immobilien",
-        "description": "Portfolio analysieren & optimieren"
+        "name": "Immobilien & Verwaltung",
+        "desc": "Analysieren Sie Ihr Portfolio mit KI, optimieren Sie Refinanzierungen und verwalten Sie Objekte effizienter als je zuvor.",
+        "benefits": ["Portfolio-KI-Analyse", "Refinanzierungsoptimierung", "Automatisierte Verwaltung"]
       }
     ]
+  },
+  "webinars": {
+    "badge": "Webinare & Events",
+    "title": "Wissen, das",
+    "titleHighlight": "weiterbringt",
+    "subtitle": "Live-Webinare, Masterclasses und 1:1 Beratung — von Experten für Unternehmer.",
+    "tags": {
+      "free": "Kostenlos",
+      "premium": "Premium",
+      "exclusive": "Exklusiv",
+      "resource": "Ressource"
+    },
+    "cta": {
+      "register": "Jetzt anmelden →",
+      "visit": "Jetzt besuchen →"
+    },
+    "items": [
+      {"date": "Jeden Dienstag", "time": "19:00 Uhr", "title": "KI im Mittelstand — Einstieg & Überblick", "desc": "Lernen Sie in 60 Minuten wie KI konkret in Ihrem Unternehmen eingesetzt werden kann."},
+      {"date": "Jeden Donnerstag", "time": "18:00 Uhr", "title": "Buchhaltung automatisieren mit KI", "desc": "Live-Demo: Wie Sie Ihre Buchhaltung vollständig automatisieren und DATEV-konform bleiben."},
+      {"date": "1x monatlich", "time": "17:00 Uhr", "title": "Business Angel Masterclass", "desc": "Für Investoren und Gründer: Deal-Flow, Bewertung, KI-Matching und Netzwerk."},
+      {"date": "1x monatlich", "time": "19:00 Uhr", "title": "Immobilien & KI — Portfoliooptimierung", "desc": "KI-gestützte Analyse Ihres Immobilienportfolios und Refinanzierungsstrategien."},
+      {"date": "Auf Anfrage", "time": "Nach Vereinbarung", "title": "1:1 Unternehmensberatung mit KI", "desc": "Persönliches Beratungsgespräch für Ihre spezifischen Unternehmensherausforderungen."},
+      {"date": "Ressourcen", "time": "Jederzeit", "title": "Unternehmervermögensschutz", "desc": "Umfassende Strategien und Lösungen zum Schutz Ihres unternehmerischen Vermögens."},
+      {"date": "Ressourcen", "time": "Jederzeit", "title": "Wegzugsbesteuerung vermeiden", "desc": "Rechtssichere Strategien zur Vermeidung der Wegzugsbesteuerung bei internationaler Verlagerung."},
+      {"date": "Ressourcen", "time": "Jederzeit", "title": "Investorenschutz Nordzypern", "desc": "Investitionsmöglichkeiten und rechtlicher Schutz für Investoren in Nordzypern."},
+      {"date": "Ressourcen", "time": "Jederzeit", "title": "Vermögensschutz International", "desc": "Internationale Strategien für optimalen Vermögensschutz und steuerliche Optimierung."},
+      {"date": "Ressourcen", "time": "Jederzeit", "title": "Corona Hilfen Ratgeber", "desc": "Ihr Leitfaden zu Corona-Hilfsprogrammen, Fördermitteln und Unterstützungsmaßnahmen."},
+      {"date": "Ressourcen", "time": "Jederzeit", "title": "Fördermittel Ratgeber", "desc": "Umfassender Überblick über verfügbare Fördermittel und Finanzierungsmöglichkeiten für Unternehmen."}
+    ]
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Sprechen Sie mit",
+    "titleHighlight": "uns",
+    "subtitle": "Wir helfen Ihnen den richtigen Einstieg in die KI-Welt zu finden.",
+    "options": {
+      "title": "Kontaktmöglichkeiten",
+      "phone": {
+        "title": "Kostenlose Hotline",
+        "info": "0800 70 800 44",
+        "sub": "Mo–Fr 9:00–18:00 Uhr"
+      },
+      "telegram": {
+        "title": "Telegram Community",
+        "info": "@nondomgroup",
+        "sub": "Direkte Antwort in der Community"
+      }
+    },
+    "form": {
+      "title": "Nachricht senden",
+      "name": {"label": "Ihr Name", "placeholder": "Max Mustermann"},
+      "email": {"label": "Ihre E-Mail", "placeholder": "max@firma.de"},
+      "company": {"label": "Unternehmen", "placeholder": "Musterfirma GmbH"},
+      "message": {"label": "Ihre Nachricht", "placeholder": "Wie können wir Ihnen helfen?"},
+      "submit": "Nachricht senden →",
+      "alternative": "Oder nutzen Sie das offizielle",
+      "alternativeLink": "Kontaktformular"
+    }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "company": "Marketplace24-7 GmbH",
+    "address": "Kantonsstrasse 1\n8807 Freienbach SZ",
+    "email": "E-Mail: info (at) non-dom.group",
+    "register": "SZ Commercial Register: CH-130.4.033.363-2",
+    "court": "Registration court: Kanton Schwyz",
+    "brand": "Non Dom Group ist eine Marke der Marketplace24-7 GmbH."
+  },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "subtitle": "Marketplace24-7 GmbH / non-dom.group · Stand: Juni 2025",
+    "sections": [
+      {"title": "1. Geltungsbereich", "content": "Diese AGB gelten für alle Verträge über Beratungs-, Analyse-, Strukturierungs- oder Projektleistungen zwischen der Marketplace24-7 GmbH (im Folgenden: Beraterin) und dem jeweiligen Vertragspartner (im Folgenden: Mandant), unabhängig von Medium oder Form der Beauftragung (online, schriftlich, digital oder mündlich bestätigt)."},
+      {"title": "2. Leistungsgegenstand", "content": "Die Beraterin erbringt strategische, wirtschaftliche, rechtliche und steuernahe Beratungsleistungen in folgenden Kernbereichen: Internationale Unternehmensstrukturierung, Gründung, Holding-Setups, Standortverlagerung, Vermögensschutz- & Private-Market-Konzepte, Investorenstrukturen, Anleihen, Trusts, Concierge-Leistungen & Sonderprojekte. Ein konkreter Leistungsumfang ergibt sich entweder aus Einzelangeboten, Leistungsbeschreibungen, E-Mail-Bestätigungen oder Ticketsystemen der Plattform. Die Leistungen stellen keine Steuer- oder Rechtsberatung im engeren Sinne dar, sofern dies nicht ausdrücklich durch entsprechend qualifizierte Partner erfolgt."},
+      {"title": "3. Vergütung & Abrechnung", "content": "Die Leistungen werden auf Stundenbasis vergütet. Abgerechnet wird monatlich, auf Basis protokollierter Arbeitszeiten. Einwände gegen Rechnungen müssen binnen 7 Kalendertagen schriftlich erfolgen. Alle Preise verstehen sich netto, zuzüglich allfälliger gesetzlicher Mehrwertsteuer."},
+      {"title": "4. Mitwirkungspflichten des Mandanten", "content": "Der Mandant verpflichtet sich, der Beraterin alle zur Durchführung erforderlichen Informationen, Dokumente und Mitwirkungsleistungen rechtzeitig zur Verfügung zu stellen. Verzögerungen infolge mangelnder Mitwirkung führen nicht zu Fristverschiebungen und begründen keine Haftung."},
+      {"title": "5. Geheimhaltung & Datenschutz", "content": "Beide Parteien verpflichten sich zur strikten Vertraulichkeit aller Informationen, Dokumente, Geschäftsprozesse und Daten aus der Zusammenarbeit. Die Geheimhaltungspflicht gilt auch nach Vertragsende unbefristet. Die Erfassung und Verarbeitung personenbezogener Daten erfolgt DSGVO-konform."},
+      {"title": "6. Haftung", "content": "Die Beraterin haftet nur bei vorsätzlicher oder grob fahrlässiger Pflichtverletzung. Eine Haftung für Folgeschäden, entgangenen Gewinn oder mittelbare Schäden ist ausgeschlossen. Der Mandant trägt die Verantwortung für unternehmerische Entscheidungen, die auf Basis von Empfehlungen der Beraterin getroffen werden."},
+      {"title": "7. Kündigung & Beendigung", "content": "Beide Parteien können das Mandatsverhältnis mit 14 Tagen Frist schriftlich kündigen, sofern keine abweichende Regelung getroffen wurde. Bereits erbrachte Leistungen bis zum Kündigungszeitpunkt sind voll vergütungspflichtig."},
+      {"title": "8. Schiedsgerichtsbarkeit", "content": "Alle Streitigkeiten aus oder im Zusammenhang mit diesem Vertrag unterliegen ausschließlich der Internationalen Schweizerischen Schiedsordnung (Swiss Rules 2021). Das Schiedsgericht besteht aus einem Einzelschiedsrichter. Sitz: Zürich, Schweiz – Sprache: Deutsch – Recht: Schweizer OR."},
+      {"title": "9. Schlussbestimmungen", "content": "Nebenabreden bedürfen der Schriftform. Sollten einzelne Bestimmungen unwirksam sein, bleibt die Wirksamkeit der übrigen unberührt. Erfüllungsort ist Freienbach SZ, Schweiz."}
+    ]
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "subtitle": "Marketplace24-7 GmbH / non-dom.group · Stand: Juni 2025",
+    "intro": "Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und Zweck der Verarbeitung personenbezogener Daten auf unserer Website.",
+    "sections": {
+      "overview": {"title": "Datenschutz auf einen Blick", "intro": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.", "desc": "Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können."},
+      "hosting": {"title": "Hosting", "desc": "Wir hosten die Inhalte unserer Website bei Railway Corp. Wenn Sie unsere Website besuchen, erfasst Railway verschiedene Logfiles inklusive Ihrer IP-Adressen."},
+      "general": {"title": "Allgemeine Hinweise und Pflichtinformationen", "desc": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften."},
+      "dataCollection": {"title": "Datenerfassung auf dieser Website", "desc": "Unsere Internetseiten verwenden Cookies. Cookies sind kleine Datenpakete und richten auf Ihrem Endgerät keinen Schaden an."}
+    }
   },
   "footer": {
     "description": "Deutschlands #1 KI Mittelstands-Plattform. 32+ Unternehmen in ganz Europa durch modernste KI-Technologie vernetzt.",

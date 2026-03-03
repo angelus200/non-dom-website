@@ -6,176 +6,341 @@
     "contact": "Contact",
     "phone": "+41 800 70 800 44"
   },
-  "hero": {
-    "badge": "🇨🇭 Swiss Quality & Security | 🤖 AI for SMEs",
-    "title": "The #1",
-    "titleHighlight": "Business",
-    "titleEnd": "Marketplace",
-    "description": "AI-powered platforms, automated workflows, and a network of 32+ European companies — available now for free.",
-    "ctaPrimary": "View All Solutions →",
-    "ctaSecondary": "Get in Touch",
-    "platformsTitle": "🚀 Our AI Platforms",
-    "stats": {
-      "companies": "Companies",
-      "platforms": "AI Platforms",
-      "freeStart": "Free Start",
-      "results": "First Results"
+  "home": {
+    "hero": {
+      "badge1": "Swiss Quality & Security",
+      "badge2": "AI for SMEs",
+      "title": "The #1",
+      "titleHighlight": "Business",
+      "titleLine2": "Marketplace",
+      "subtitle": "AI-powered platforms, automated workflows, and a network of 32+ European companies — available now for free.",
+      "ctaPrimary": "View All Solutions →",
+      "ctaSecondary": "Get in Touch",
+      "platformsTitle": "🚀 Our AI Platforms",
+      "stat1": "Companies",
+      "stat2": "AI Platforms",
+      "stat3": "Free Start",
+      "stat4": "First Results"
+    },
+    "platforms": {
+      "app1": {
+        "tags": "Investment · Deal Flow · AI Matching"
+      },
+      "app2": {
+        "tags": "Real Estate · Refinancing · AI Analysis"
+      },
+      "app3": {
+        "tags": "Accounting · DATEV · Automation"
+      },
+      "app4": {
+        "tags": "Amazon FBA · Passive Income · B2B"
+      },
+      "app5": {
+        "tags": "Holding · Asset Protection"
+      },
+      "app6": {
+        "name": "More AI Apps",
+        "url": "In Development",
+        "tags": "Coming Soon"
+      }
+    },
+    "partners": {
+      "title": "Media, Partners & Certifications"
+    },
+    "platformsSection": {
+      "badge": "AI Ecosystem",
+      "title": "Our",
+      "titleHighlight": "5 specialized",
+      "titleEnd": "Platforms",
+      "subtitle": "Each platform solves a specific SME problem — together forming Germany's most comprehensive business ecosystem.",
+      "comingSoon": "Coming Soon"
+    },
+    "features": {
+      "badge": "AI Technology",
+      "title": "Intelligence that",
+      "titleHighlight": "works for you",
+      "subtitle": "GDPR-compliant, specifically designed for German SMEs — ready to use immediately.",
+      "items": [
+        {
+          "title": "AI Business Analysis",
+          "desc": "Fully automated analysis with concrete recommendations in real-time."
+        },
+        {
+          "title": "Document AI",
+          "desc": "Contracts, invoices, forms — automatically classified and processed."
+        },
+        {
+          "title": "AI Consultant 24/7",
+          "desc": "Personal AI consultant for tax, legal, and operational questions."
+        },
+        {
+          "title": "Automated Workflows",
+          "desc": "Configure once, automate forever. Repetitive tasks eliminated."
+        },
+        {
+          "title": "Central Dashboard",
+          "desc": "All KPIs, data, and AI evaluations in one clear command center."
+        },
+        {
+          "title": "GDPR Compliant",
+          "desc": "Your data stays in Germany. ISO-certified infrastructure."
+        }
+      ]
+    },
+    "why": {
+      "badge": "Why NON DOM Group",
+      "title": "The smartest system for",
+      "titleHighlight": "SMEs",
+      "reasons": [
+        {
+          "title": "European Network",
+          "desc": "32+ companies across Europe — unique know-how and network effects."
+        },
+        {
+          "title": "Specialized AI Platforms",
+          "desc": "Each platform solves real SME problems with cutting-edge AI — no one-size-fits-all solution."
+        },
+        {
+          "title": "Complete Integration",
+          "desc": "One login, one dashboard — all platforms communicate with each other."
+        },
+        {
+          "title": "Unbeatable Value",
+          "desc": "Free entry. Premium features at a fraction of comparable solutions."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Register for Free",
+          "desc": "Signed up in 2 minutes. No credit card required."
+        },
+        {
+          "title": "Create Business Profile",
+          "desc": "AI analyzes your industry and creates a personalized optimization profile."
+        },
+        {
+          "title": "Activate Platforms",
+          "desc": "Select the relevant AI platforms — individually or as a bundle."
+        },
+        {
+          "title": "Automate Workflows",
+          "desc": "AI takes over repetitive tasks and optimizes daily."
+        },
+        {
+          "title": "Measure Results",
+          "desc": "See ROI in the dashboard. First results after 48 hours."
+        }
+      ]
+    },
+    "targets": {
+      "badge": "Target Groups",
+      "title": "The right solution for",
+      "titleHighlight": "every business",
+      "subtitle": "Whether sole proprietor or medium-sized company — our AI platform adapts to your industry.",
+      "items": [
+        {
+          "name": "Freelancers",
+          "desc": "Automation from day one"
+        },
+        {
+          "name": "Craftsmen",
+          "desc": "Digitalization made easy"
+        },
+        {
+          "name": "E-Commerce",
+          "desc": "Scale with AI power"
+        },
+        {
+          "name": "Transport",
+          "desc": "Optimize logistics & routes"
+        },
+        {
+          "name": "Startups",
+          "desc": "Investor matching & funding"
+        },
+        {
+          "name": "Consultants",
+          "desc": "AI as strategic partner"
+        },
+        {
+          "name": "Gastronomy",
+          "desc": "Reduce costs, streamline processes"
+        },
+        {
+          "name": "Real Estate",
+          "desc": "Analyze & optimize portfolio"
+        }
+      ]
     }
   },
-  "platforms": {
-    "businessAngel": {
-      "name": "Business Angel App",
-      "tags": ["Investment", "Deal Flow", "AI Matching"]
-    },
-    "immoPortal": {
-      "name": "ImmoPortal",
-      "tags": ["Real Estate", "Refinancing", "AI Analysis"]
-    },
-    "accounting": {
-      "name": "Accounting AI",
-      "tags": ["Accounting", "DATEV", "Automation"]
-    },
-    "ecommerce": {
-      "name": "E-Commerce Pension",
-      "tags": ["Amazon FBA", "Passive Income", "B2B"]
-    },
-    "optimization": {
-      "name": "Business Optimization",
-      "tags": ["Holding", "Asset Protection"]
-    },
-    "more": {
-      "name": "More AI Apps",
-      "status": "In Development",
-      "tags": ["Coming Soon"]
-    }
-  },
-  "partners": {
-    "title": "Media, Partners & Certifications"
-  },
-  "platformsSection": {
+  "solutions": {
     "badge": "AI Ecosystem",
     "title": "Our",
-    "titleHighlight": "5 specialized",
-    "titleEnd": "Platforms",
-    "description": "Each platform solves a specific SME problem — together forming Germany's most comprehensive business ecosystem.",
-    "comingSoon": "Coming Soon"
-  },
-  "features": {
-    "badge": "AI Technology",
-    "title": "Intelligence that",
-    "titleHighlight": "works for you",
-    "description": "GDPR-compliant, specifically designed for German SMEs — ready to use immediately.",
-    "items": [
+    "titleHighlight": "Solutions",
+    "subtitle": "5 specialized AI platforms — each solving a specific SME problem.",
+    "apps": [
       {
-        "title": "AI Business Analysis",
-        "description": "Fully automated analysis with concrete recommendations in real-time."
+        "tags": "Investment · Deal Flow · AI Matching",
+        "desc": "Connect with business angels, optimize your deal flow, and find the right investors for your company through AI matching."
       },
       {
-        "title": "Document AI",
-        "description": "Contracts, invoices, forms — automatically classified and processed."
+        "tags": "Real Estate · Refinancing · AI Analysis",
+        "desc": "AI-powered real estate analysis, automated valuations, and smart refinancing strategies for your property portfolio."
       },
       {
-        "title": "AI Consultant 24/7",
-        "description": "Personal AI consultant for tax, legal, and operational questions."
+        "tags": "Accounting · DATEV · Automation",
+        "desc": "Fully automated accounting with DATEV integration. Invoices, receipts, and annual statements — handled by AI."
       },
       {
-        "title": "Automated Workflows",
-        "description": "Configure once, automate forever. Repetitive tasks eliminated."
+        "tags": "Amazon FBA · Passive Income · B2B",
+        "desc": "Build an automated Amazon FBA business as a passive income model — with AI-optimized product selection."
       },
       {
-        "title": "Central Dashboard",
-        "description": "All KPIs, data, and AI evaluations in one clear command center."
-      },
-      {
-        "title": "GDPR Compliant",
-        "description": "Your data stays in Germany. ISO-certified infrastructure."
+        "tags": "Holding · Asset Protection · Optimization",
+        "desc": "Structure your corporate group as a holding company, protect assets, and optimize taxes through AI analysis."
       }
     ]
   },
-  "why": {
-    "badge": "Why NON DOM Group",
-    "title": "The smartest system for",
-    "titleHighlight": "SMEs",
-    "benefits": [
-      {
-        "title": "European Network",
-        "description": "32+ companies across Europe — unique know-how and network effects."
-      },
-      {
-        "title": "Specialized AI Platforms",
-        "description": "Each platform solves real SME problems with cutting-edge AI — no one-size-fits-all solution."
-      },
-      {
-        "title": "Complete Integration",
-        "description": "One login, one dashboard — all platforms communicate with each other."
-      },
-      {
-        "title": "Unbeatable Value",
-        "description": "Free entry. Premium features at a fraction of comparable solutions."
-      }
-    ],
-    "steps": [
-      {
-        "title": "Register for Free",
-        "description": "Signed up in 2 minutes. No credit card required."
-      },
-      {
-        "title": "Create Business Profile",
-        "description": "AI analyzes your industry and creates a personalized optimization profile."
-      },
-      {
-        "title": "Activate Platforms",
-        "description": "Select the relevant AI platforms — individually or as a bundle."
-      },
-      {
-        "title": "Automate Workflows",
-        "description": "AI takes over repetitive tasks and optimizes daily."
-      },
-      {
-        "title": "Measure Results",
-        "description": "See ROI in the dashboard. First results after 48 hours."
-      }
-    ]
-  },
-  "targets": {
+  "targetGroups": {
     "badge": "Target Groups",
-    "title": "The right solution for",
-    "titleHighlight": "every business",
-    "description": "Whether sole proprietor or medium-sized company — our AI platform adapts to your industry.",
+    "title": "For every",
+    "titleHighlight": "Business",
+    "subtitle": "Our AI platform adapts to your industry and company size.",
     "groups": [
       {
-        "name": "Freelancers",
-        "description": "Automation from day one"
+        "name": "Freelancers & Self-Employed",
+        "desc": "As a solo entrepreneur, you have little time for administration. Our AI automates accounting, invoicing, and customer communication — so you can focus on your core business.",
+        "benefits": ["Automatic invoicing", "AI accounting without tax advisor", "Time savings up to 15h/week"]
       },
       {
-        "name": "Craftsmen",
-        "description": "Digitalization made easy"
+        "name": "Craftsmen & Trades",
+        "desc": "Digitalization doesn't have to be complicated. Our platforms help craft businesses work more efficiently and win more contracts.",
+        "benefits": ["Digital order processing", "Automated quote creation", "Customer management with AI"]
       },
       {
-        "name": "E-Commerce",
-        "description": "Scale with AI power"
+        "name": "E-Commerce & Retail",
+        "desc": "Scale your online business with AI power. From Amazon FBA to your own shop optimization — we have the right solution.",
+        "benefits": ["Amazon FBA automation", "AI product analysis", "Passive income streams"]
       },
       {
-        "name": "Transport",
-        "description": "Optimize logistics & routes"
+        "name": "Transport & Logistics",
+        "desc": "Optimize routes, fleet, and order management with intelligent AI — and save costs on every kilometer.",
+        "benefits": ["Route optimization", "Fleet management", "Automated order distribution"]
       },
       {
-        "name": "Startups",
-        "description": "Investor matching & funding"
+        "name": "Startups & Scale-ups",
+        "desc": "Investor matching, pitch deck analysis, and network of business angels — everything you need for your growth phase.",
+        "benefits": ["Business angel matching", "AI pitch deck analysis", "Investor network"]
       },
       {
-        "name": "Consultants",
-        "description": "AI as strategic partner"
+        "name": "Consultants & Coaches",
+        "desc": "Use AI as your strategic partner. Analyze customer data, automate reports, and win more clients.",
+        "benefits": ["AI-powered analyses", "Automated reports", "Optimize client acquisition"]
       },
       {
-        "name": "Gastronomy",
-        "description": "Reduce costs, streamline processes"
+        "name": "Gastronomy & Hospitality",
+        "desc": "From accounting to staff planning — AI helps you reduce costs and make operations more efficient.",
+        "benefits": ["Cost optimization", "Digital accounting", "Staff planning with AI"]
       },
       {
-        "name": "Real Estate",
-        "description": "Analyze & optimize portfolio"
+        "name": "Real Estate & Management",
+        "desc": "Analyze your portfolio with AI, optimize refinancing, and manage properties more efficiently than ever before.",
+        "benefits": ["Portfolio AI analysis", "Refinancing optimization", "Automated management"]
       }
     ]
+  },
+  "webinars": {
+    "badge": "Webinars & Events",
+    "title": "Knowledge that",
+    "titleHighlight": "moves you forward",
+    "subtitle": "Live webinars, masterclasses, and 1:1 consulting — from experts for entrepreneurs.",
+    "tags": {
+      "free": "Free",
+      "premium": "Premium",
+      "exclusive": "Exclusive",
+      "resource": "Resource"
+    },
+    "cta": {
+      "register": "Register now →",
+      "visit": "Visit now →"
+    },
+    "items": [
+      {"date": "Every Tuesday", "time": "7:00 PM", "title": "AI in SMEs — Introduction & Overview", "desc": "Learn in 60 minutes how AI can be used concretely in your company."},
+      {"date": "Every Thursday", "time": "6:00 PM", "title": "Automate Accounting with AI", "desc": "Live demo: How to fully automate your accounting and remain DATEV compliant."},
+      {"date": "Once monthly", "time": "5:00 PM", "title": "Business Angel Masterclass", "desc": "For investors and founders: Deal flow, valuation, AI matching, and network."},
+      {"date": "Once monthly", "time": "7:00 PM", "title": "Real Estate & AI — Portfolio Optimization", "desc": "AI-powered analysis of your real estate portfolio and refinancing strategies."},
+      {"date": "On request", "time": "By appointment", "title": "1:1 Business Consulting with AI", "desc": "Personal consultation for your specific business challenges."},
+      {"date": "Resources", "time": "Anytime", "title": "Entrepreneurial Asset Protection", "desc": "Comprehensive strategies and solutions for protecting your entrepreneurial assets."},
+      {"date": "Resources", "time": "Anytime", "title": "Avoid Exit Tax", "desc": "Legally secure strategies to avoid exit taxation during international relocation."},
+      {"date": "Resources", "time": "Anytime", "title": "Investor Protection Northern Cyprus", "desc": "Investment opportunities and legal protection for investors in Northern Cyprus."},
+      {"date": "Resources", "time": "Anytime", "title": "International Asset Protection", "desc": "International strategies for optimal asset protection and tax optimization."},
+      {"date": "Resources", "time": "Anytime", "title": "Corona Aid Guide", "desc": "Your guide to corona aid programs, grants, and support measures."},
+      {"date": "Resources", "time": "Anytime", "title": "Funding Guide", "desc": "Comprehensive overview of available grants and financing options for companies."}
+    ]
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Talk to",
+    "titleHighlight": "us",
+    "subtitle": "We help you find the right entry into the AI world.",
+    "options": {
+      "title": "Contact Options",
+      "phone": {
+        "title": "Free Hotline",
+        "info": "+41 800 70 800 44",
+        "sub": "Mon–Fri 9:00 AM–6:00 PM"
+      },
+      "telegram": {
+        "title": "Telegram Community",
+        "info": "@nondomgroup",
+        "sub": "Direct response in the community"
+      }
+    },
+    "form": {
+      "title": "Send Message",
+      "name": {"label": "Your Name", "placeholder": "John Doe"},
+      "email": {"label": "Your Email", "placeholder": "john@company.com"},
+      "company": {"label": "Company", "placeholder": "Example Company Ltd."},
+      "message": {"label": "Your Message", "placeholder": "How can we help you?"},
+      "submit": "Send message →",
+      "alternative": "Or use the official",
+      "alternativeLink": "contact form"
+    }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "company": "Marketplace24-7 GmbH",
+    "address": "Kantonsstrasse 1\n8807 Freienbach SZ",
+    "email": "Email: info (at) non-dom.group",
+    "register": "SZ Commercial Register: CH-130.4.033.363-2",
+    "court": "Registration court: Canton of Schwyz",
+    "brand": "Non Dom Group is a brand of Marketplace24-7 GmbH."
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "subtitle": "Marketplace24-7 GmbH / non-dom.group · As of: June 2025",
+    "sections": [
+      {"title": "1. Scope", "content": "These terms and conditions apply to all contracts for consulting, analysis, structuring, or project services between Marketplace24-7 GmbH (hereinafter: Consultant) and the respective contracting party (hereinafter: Client), regardless of medium or form of commissioning (online, written, digital, or verbally confirmed)."},
+      {"title": "2. Scope of Services", "content": "The Consultant provides strategic, economic, legal, and tax-related consulting services in the following core areas: International corporate structuring, formation, holding setups, location relocation, asset protection & private market concepts, investor structures, bonds, trusts, concierge services & special projects. A specific scope of services is determined either from individual offers, service descriptions, email confirmations, or platform ticketing systems. The services do not constitute tax or legal advice in the strict sense, unless this is expressly provided by appropriately qualified partners."},
+      {"title": "3. Remuneration & Billing", "content": "Services are remunerated on an hourly basis. Billing is monthly, based on logged working hours. Objections to invoices must be made in writing within 7 calendar days. All prices are net, plus any applicable statutory VAT."},
+      {"title": "4. Client Obligations to Cooperate", "content": "The Client undertakes to provide the Consultant with all information, documents, and cooperation services required for implementation in a timely manner. Delays resulting from lack of cooperation do not lead to deadline extensions and do not justify liability."},
+      {"title": "5. Confidentiality & Data Protection", "content": "Both parties undertake to strict confidentiality of all information, documents, business processes, and data from the collaboration. The confidentiality obligation also applies indefinitely after the end of the contract. The collection and processing of personal data is GDPR compliant."},
+      {"title": "6. Liability", "content": "The Consultant is only liable for intentional or grossly negligent breach of duty. Liability for consequential damages, lost profits, or indirect damages is excluded. The Client bears responsibility for business decisions made on the basis of the Consultant's recommendations."},
+      {"title": "7. Termination", "content": "Both parties can terminate the mandate relationship in writing with 14 days' notice, unless a different regulation has been agreed. Services already provided up to the termination date are fully payable."},
+      {"title": "8. Arbitration", "content": "All disputes arising from or in connection with this contract are subject exclusively to the Swiss Rules of International Arbitration (Swiss Rules 2021). The arbitral tribunal consists of a sole arbitrator. Seat: Zurich, Switzerland – Language: German – Law: Swiss Code of Obligations."},
+      {"title": "9. Final Provisions", "content": "Side agreements require written form. Should individual provisions be invalid, the effectiveness of the others remains unaffected. Place of performance is Freienbach SZ, Switzerland."}
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Marketplace24-7 GmbH / non-dom.group · As of: June 2025",
+    "intro": "This privacy policy informs you about the nature, scope, and purpose of the processing of personal data on our website.",
+    "sections": {
+      "overview": {"title": "Privacy at a Glance", "intro": "The following information provides a simple overview of what happens to your personal data when you visit this website.", "desc": "Personal data is all data with which you can be personally identified."},
+      "hosting": {"title": "Hosting", "desc": "We host our website content with Railway Corp. When you visit our website, Railway collects various log files including your IP addresses."},
+      "general": {"title": "General Information and Mandatory Information", "desc": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with legal data protection regulations."},
+      "dataCollection": {"title": "Data Collection on this Website", "desc": "Our websites use cookies. Cookies are small data packages and do not cause any damage to your device."}
+    }
   },
   "footer": {
     "description": "Germany's #1 AI SME platform. 32+ companies across Europe connected through cutting-edge AI technology.",

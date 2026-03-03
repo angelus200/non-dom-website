@@ -1,45 +1,10 @@
 "use client";
 import { useEffect } from "react";
-import Link from "next/link";
-
-const apps = [
-  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/a2d19a68-3aec-422e-6d2b-b4087c2e7d00/public", name: "Business Angel App", url: "businessangel.app", href: "https://www.businessangel.app", tags: ["Investment", "Deal-Flow", "KI-Matching"] },
-  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/80501913-9d72-4804-335e-de63063c1800/public", name: "ImmoPortal", url: "immoportal.app", href: "https://portal.immoportal.app", tags: ["Immobilien", "Refinanzierung", "KI-Analyse"] },
-  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/c582d6ad-dd7a-4aed-584f-5e9ace690900/public", name: "Buchhaltung KI", url: "buchhaltung-ki.app", href: "https://www.buchhaltung-ki.app", tags: ["Buchhaltung", "DATEV", "Automatisierung"] },
-  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/0201a548-ba53-4eb9-d265-183dc763d400/public", name: "E-Commerce Rente", url: "ecommercerente.com", href: "https://www.ecommercerente.com", tags: ["Amazon FBA", "Passives Einkommen", "B2B"] },
-  { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/960202a1-985a-49ef-c707-22ca49543100/public", name: "Unternehmensoptimierung", url: "unternehmensoptimierung.app", href: "https://www.unternehmensoptimierung.app", tags: ["Holding", "Vermögensschutz"] },
-  { icon: "✨", name: "Weitere KI-Apps", url: "In Entwicklung", href: null, tags: ["Coming Soon"], disabled: true },
-];
-
-const features = [
-  { icon: "🔍", title: "KI-Unternehmensanalyse", desc: "Vollautomatische Analyse mit konkreten Handlungsempfehlungen in Echtzeit." },
-  { icon: "📄", title: "Dokumenten-KI", desc: "Verträge, Rechnungen, Formulare — klassifiziert und verarbeitet automatisch." },
-  { icon: "🧠", title: "KI-Berater 24/7", desc: "Persönlicher KI-Berater für steuerliche, rechtliche und operative Fragen." },
-  { icon: "⚡", title: "Automatisierte Workflows", desc: "Einmal konfigurieren, dauerhaft automatisieren. Repetitive Aufgaben entfallen." },
-  { icon: "📊", title: "Zentrales Dashboard", desc: "Alle KPIs, Daten und KI-Auswertungen in einem übersichtlichen Command Center." },
-  { icon: "🛡️", title: "DSGVO-konform", desc: "Ihre Daten bleiben in Deutschland. ISO-zertifizierte Infrastruktur." },
-];
-
-const targets = [
-  { icon: "💻", name: "Selbstständige", desc: "Automatisierung vom ersten Tag" },
-  { icon: "🔨", name: "Handwerk", desc: "Digitalisierung leicht gemacht" },
-  { icon: "🛒", name: "E-Commerce", desc: "Skalierung mit KI-Power" },
-  { icon: "🚚", name: "Transport", desc: "Logistik & Routen optimieren" },
-  { icon: "🚀", name: "Startups", desc: "Investor-Matching & Funding" },
-  { icon: "📋", name: "Berater", desc: "KI als strategischen Partner" },
-  { icon: "🍽️", name: "Gastronomie", desc: "Kosten senken, Prozesse straffen" },
-  { icon: "🏘️", name: "Immobilien", desc: "Portfolio analysieren & optimieren" },
-];
-
-const steps = [
-  { n: 1, t: "Kostenlos registrieren", d: "In 2 Minuten angemeldet. Keine Kreditkarte." },
-  { n: 2, t: "Unternehmensprofil anlegen", d: "KI analysiert Ihre Branche und erstellt ein personalisiertes Optimierungsprofil." },
-  { n: 3, t: "Plattformen aktivieren", d: "Die relevanten KI-Plattformen auswählen — einzeln oder im Bundle." },
-  { n: 4, t: "Workflows automatisieren", d: "KI übernimmt repetitive Aufgaben und optimiert täglich." },
-  { n: 5, t: "Ergebnisse messen", d: "ROI im Dashboard sehen. Erste Ergebnisse nach 48 Stunden." },
-];
+import {Link} from "@/i18n/routing";
+import {useTranslations} from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations('home');
   useEffect(() => {
     const obs = new IntersectionObserver((entries) => {
       entries.forEach((e, i) => {
@@ -77,32 +42,32 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 bg-[rgba(0,180,216,0.18)] border border-[rgba(0,180,216,0.35)] px-4 py-1.5 rounded-full text-[#48CAE4] text-xs font-semibold mb-5">
               <div className="flex items-center justify-center gap-8 text-sm font-semibold">
                 <span className="flex items-center gap-2 text-white text-base">
-                  🇨🇭 <span className="text-[#00B4D8]">Schweizer Qualität & Sicherheit</span>
+                  🇨🇭 <span className="text-[#00B4D8]">{t('hero.badge1')}</span>
                 </span>
                 <span className="text-white/40">|</span>
                 <span className="flex items-center gap-2 text-white text-base">
-                  🤖 <span className="text-[#00B4D8]">Die KI für den Mittelstand</span>
+                  🤖 <span className="text-[#00B4D8]">{t('hero.badge2')}</span>
                 </span>
               </div>
             </div>
             <h1 className="text-4xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight mb-5">
-              Der #1 <span className="text-[#00B4D8]">Unternehmer</span><br/>Marktplatz
+              {t('hero.title')} <span className="text-[#00B4D8]">{t('hero.titleHighlight')}</span><br/>{t('hero.titleLine2')}
             </h1>
             <p className="text-white/70 text-lg leading-relaxed mb-8 max-w-lg">
-              KI-gestützte Plattformen, automatisierte Workflows und ein Netzwerk aus 32+ europäischen Unternehmen — ab sofort kostenlos.
+              {t('hero.subtitle')}
             </p>
             <div className="flex gap-3 flex-wrap mb-10">
               <Link href="/loesungen"
                 className="bg-[#0096C7] hover:bg-[#0077B6] text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,150,199,0.5)]">
-                Alle Lösungen ansehen →
+                {t('hero.ctaPrimary')}
               </Link>
               <Link href="/kontakt"
                 className="border-2 border-[rgba(0,180,216,0.45)] text-[#48CAE4] hover:border-[#00B4D8] hover:bg-[rgba(0,180,216,0.08)] px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-200">
-                Kontakt aufnehmen
+                {t('hero.ctaSecondary')}
               </Link>
             </div>
             <div className="flex gap-8 flex-wrap">
-              {[["32+","Unternehmen"],["5","KI-Plattformen"],["€0","Kostenloser Start"],["48h","Erste Ergebnisse"]].map(([n,l]) => (
+              {[["32+",t('hero.stat1')],["5",t('hero.stat2')],["€0",t('hero.stat3')],["48h",t('hero.stat4')]].map(([n,l]) => (
                 <div key={l}>
                   <span className="block text-[1.9rem] font-black text-[#00B4D8] tracking-tight leading-none">{n}</span>
                   <span className="text-white/55 text-xs mt-0.5 block">{l}</span>
@@ -112,18 +77,20 @@ export default function Home() {
           </div>
           {/* Hero Card */}
           <div className="hidden lg:block bg-white/5 border border-[rgba(0,180,216,0.2)] rounded-2xl p-7 backdrop-blur-sm">
-            <div className="text-white font-bold text-lg mb-5">🚀 Unsere KI-Plattformen</div>
-            {apps.filter(a => !a.disabled).map((app) => (
-              <a key={app.name} href={app.href!} target="_blank" rel="noopener noreferrer"
+            <div className="text-white font-bold text-lg mb-5">{t('hero.platformsTitle')}</div>
+            {[
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/a2d19a68-3aec-422e-6d2b-b4087c2e7d00/public", name: "Business Angel App", href: "https://www.businessangel.app", tags: t('platforms.app1.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/80501913-9d72-4804-335e-de63063c1800/public", name: "ImmoPortal", href: "https://portal.immoportal.app", tags: t('platforms.app2.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/c582d6ad-dd7a-4aed-584f-5e9ace690900/public", name: "Buchhaltung KI", href: "https://www.buchhaltung-ki.app", tags: t('platforms.app3.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/0201a548-ba53-4eb9-d265-183dc763d400/public", name: "E-Commerce Rente", href: "https://www.ecommercerente.com", tags: t('platforms.app4.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/960202a1-985a-49ef-c707-22ca49543100/public", name: "Unternehmensoptimierung", href: "https://www.unternehmensoptimierung.app", tags: t('platforms.app5.tags') },
+            ].map((app) => (
+              <a key={app.name} href={app.href} target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-white/[0.04] hover:bg-[rgba(0,180,216,0.12)] border border-[rgba(0,180,216,0.1)] hover:border-[rgba(0,180,216,0.28)] rounded-xl p-3 mb-2.5 text-white transition-all duration-200 group">
-                {app.icon.startsWith('http') ? (
-                  <img src={app.icon} className="w-12 h-12 rounded-xl object-cover flex-shrink-0" alt={app.name} />
-                ) : (
-                  <span className="text-2xl flex-shrink-0">{app.icon}</span>
-                )}
+                <img src={app.icon} className="w-12 h-12 rounded-xl object-cover flex-shrink-0" alt={app.name} />
                 <div>
                   <div className="font-bold text-sm">{app.name}</div>
-                  <div className="text-white/50 text-xs mt-0.5">{app.tags.join(" · ")}</div>
+                  <div className="text-white/50 text-xs mt-0.5">{app.tags}</div>
                 </div>
                 <span className="ml-auto text-[#00B4D8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
               </a>
@@ -135,7 +102,7 @@ export default function Home() {
       {/* PARTNER */}
       <section className="py-8 px-4 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto">
-          <p className="text-center text-xs tracking-[3px] uppercase text-gray-400 font-semibold mb-5">Medien, Partner & Zertifizierungen</p>
+          <p className="text-center text-xs tracking-[3px] uppercase text-gray-400 font-semibold mb-5">{t('partners.title')}</p>
           <div className="flex flex-wrap justify-center items-center gap-6">
             {[
               { name: "Fit for Fun", url: "https://unternehmen.fitforfun.de/gesundheit-als-lifestyle.html", logo: "/logos/fitforfun.webp" },
@@ -160,16 +127,23 @@ export default function Home() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <span className="inline-block bg-[rgba(0,150,199,0.08)] text-[#0096C7] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">KI-Ökosystem</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0A1628] tracking-tight mb-3">Unsere <span className="text-[#0096C7]">5 spezialisierten</span> Plattformen</h2>
-            <p className="text-gray-500 max-w-xl leading-relaxed">Jede Plattform löst ein konkretes Mittelstandsproblem — gemeinsam das vollständigste Unternehmer-Ökosystem Deutschlands.</p>
+            <span className="inline-block bg-[rgba(0,150,199,0.08)] text-[#0096C7] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">{t('platformsSection.badge')}</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0A1628] tracking-tight mb-3">{t('platformsSection.title')} <span className="text-[#0096C7]">{t('platformsSection.titleHighlight')}</span> {t('platformsSection.titleEnd')}</h2>
+            <p className="text-gray-500 max-w-xl leading-relaxed">{t('platformsSection.subtitle')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {apps.map((app, i) => {
+            {[
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/a2d19a68-3aec-422e-6d2b-b4087c2e7d00/public", name: "Business Angel App", url: "businessangel.app", href: "https://www.businessangel.app", tags: t('platforms.app1.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/80501913-9d72-4804-335e-de63063c1800/public", name: "ImmoPortal", url: "immoportal.app", href: "https://portal.immoportal.app", tags: t('platforms.app2.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/c582d6ad-dd7a-4aed-584f-5e9ace690900/public", name: "Buchhaltung KI", url: "buchhaltung-ki.app", href: "https://www.buchhaltung-ki.app", tags: t('platforms.app3.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/0201a548-ba53-4eb9-d265-183dc763d400/public", name: "E-Commerce Rente", url: "ecommercerente.com", href: "https://www.ecommercerente.com", tags: t('platforms.app4.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/960202a1-985a-49ef-c707-22ca49543100/public", name: "Unternehmensoptimierung", url: "unternehmensoptimierung.app", href: "https://www.unternehmensoptimierung.app", tags: t('platforms.app5.tags') },
+              { icon: "✨", name: t('platforms.app6.name'), url: t('platforms.app6.url'), href: null, tags: t('platforms.app6.tags'), disabled: true },
+            ].map((app, i) => {
               const Card = (
                 <div className={`bg-white border-[1.5px] ${app.disabled ? "border-gray-200 opacity-40" : "border-gray-200 hover:border-[#0096C7] hover:shadow-[0_8px_28px_rgba(0,150,199,0.15)] hover:-translate-y-0.5 cursor-pointer"} rounded-2xl p-6 transition-all duration-300 relative overflow-hidden fade-up`}>
                   <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#00B4D8] to-[#0096C7] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"/>
-                  {app.disabled && <span className="absolute top-3 right-3 bg-gray-100 text-gray-400 text-[0.65rem] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">Demnächst</span>}
+                  {app.disabled && <span className="absolute top-3 right-3 bg-gray-100 text-gray-400 text-[0.65rem] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">{t('platformsSection.comingSoon')}</span>}
                   {!app.disabled && <span className="float-right text-[#0096C7] text-sm">↗</span>}
                   {app.icon.startsWith('http') ? (
                     <img src={app.icon} className="w-12 h-12 rounded-xl object-cover mb-3" alt={app.name} />
@@ -179,7 +153,7 @@ export default function Home() {
                   <div className="font-black text-[#0A1628] text-base mb-1">{app.name}</div>
                   <div className="text-[#0096C7] text-xs font-semibold mb-3">{app.url}</div>
                   <div className="flex gap-1.5 flex-wrap">
-                    {app.tags.map(t => <span key={t} className="text-[0.67rem] font-bold bg-[rgba(0,150,199,0.08)] border border-[rgba(0,150,199,0.2)] text-[#0096C7] px-2.5 py-0.5 rounded-full">{t}</span>)}
+                    <span className="text-[0.67rem] font-bold bg-[rgba(0,150,199,0.08)] border border-[rgba(0,150,199,0.2)] text-[#0096C7] px-2.5 py-0.5 rounded-full">{app.tags}</span>
                   </div>
                 </div>
               );
@@ -195,12 +169,19 @@ export default function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-block bg-[rgba(0,150,199,0.08)] text-[#0096C7] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">KI-Technologie</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0A1628] tracking-tight mb-3">Intelligenz, die für Sie <span className="text-[#0096C7]">arbeitet</span></h2>
-            <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">DSGVO-konform, speziell für den deutschen Mittelstand — sofort einsatzbereit.</p>
+            <span className="inline-block bg-[rgba(0,150,199,0.08)] text-[#0096C7] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">{t('features.badge')}</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0A1628] tracking-tight mb-3">{t('features.title')} <span className="text-[#0096C7]">{t('features.titleHighlight')}</span></h2>
+            <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">{t('features.subtitle')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {features.map((f, i) => (
+            {[
+              { icon: "🔍", title: t('features.items.0.title'), desc: t('features.items.0.desc') },
+              { icon: "📄", title: t('features.items.1.title'), desc: t('features.items.1.desc') },
+              { icon: "🧠", title: t('features.items.2.title'), desc: t('features.items.2.desc') },
+              { icon: "⚡", title: t('features.items.3.title'), desc: t('features.items.3.desc') },
+              { icon: "📊", title: t('features.items.4.title'), desc: t('features.items.4.desc') },
+              { icon: "🛡️", title: t('features.items.5.title'), desc: t('features.items.5.desc') },
+            ].map((f, i) => (
               <div key={f.title} className="bg-gray-50 hover:bg-white border-[1.5px] border-gray-200 hover:border-[#0096C7] rounded-xl p-6 transition-all duration-200 hover:shadow-[0_4px_20px_rgba(0,150,199,0.1)] fade-up">
                 <span className="text-3xl mb-3 block">{f.icon}</span>
                 <div className="font-black text-[#0A1628] text-base mb-2">{f.title}</div>
@@ -215,15 +196,15 @@ export default function Home() {
       <section className="py-20 px-4 bg-[#0A1628] relative overflow-hidden">
         <div className="absolute inset-0" style={{background:"radial-gradient(circle at 80% 50%, rgba(0,180,216,0.11) 0%, transparent 55%)"}}/>
         <div className="max-w-7xl mx-auto relative z-10">
-          <span className="inline-block bg-[rgba(0,180,216,0.18)] text-[#48CAE4] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">Warum NON DOM Group</span>
-          <h2 className="text-3xl lg:text-4xl font-black text-white tracking-tight mb-10">Das smarteste System für den <span className="text-[#00B4D8]">Mittelstand</span></h2>
+          <span className="inline-block bg-[rgba(0,180,216,0.18)] text-[#48CAE4] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">{t('why.badge')}</span>
+          <h2 className="text-3xl lg:text-4xl font-black text-white tracking-tight mb-10">{t('why.title')} <span className="text-[#00B4D8]">{t('why.titleHighlight')}</span></h2>
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="flex flex-col gap-6">
               {[
-                { icon: "🏆", t: "Europäisches Netzwerk", d: "32+ Unternehmen in ganz Europa — einzigartiges Know-how und Netzwerkeffekte." },
-                { icon: "💡", t: "Spezialisierte KI-Plattformen", d: "Jede Plattform löst echte Mittelstandsprobleme mit modernster KI — keine Generallösung." },
-                { icon: "🔗", t: "Vollständige Integration", d: "Ein Login, ein Dashboard — alle Plattformen kommunizieren miteinander." },
-                { icon: "💰", t: "Unschlagbares Preis-Leistungs-Verhältnis", d: "Kostenloser Einstieg. Premium-Features ab einem Bruchteil vergleichbarer Lösungen." },
+                { icon: "🏆", t: t('why.reasons.0.title'), d: t('why.reasons.0.desc') },
+                { icon: "💡", t: t('why.reasons.1.title'), d: t('why.reasons.1.desc') },
+                { icon: "🔗", t: t('why.reasons.2.title'), d: t('why.reasons.2.desc') },
+                { icon: "💰", t: t('why.reasons.3.title'), d: t('why.reasons.3.desc') },
               ].map((p, i) => (
                 <div key={p.t} className="flex gap-4 fade-up">
                   <div className="flex-shrink-0 w-11 h-11 bg-[rgba(0,180,216,0.14)] border border-[rgba(0,180,216,0.28)] rounded-xl flex items-center justify-center text-xl">{p.icon}</div>
@@ -235,9 +216,15 @@ export default function Home() {
               ))}
             </div>
             <div>
-              {steps.map((s, i) => (
-                <div key={s.n} className={`flex gap-4 relative fade-up ${i < steps.length - 1 ? "pb-7" : ""}`}>
-                  {i < steps.length - 1 && <div className="absolute left-[17px] top-10 w-0.5 bottom-0 bg-gradient-to-b from-[rgba(0,180,216,0.45)] to-[rgba(0,180,216,0.02)]"/>}
+              {[
+                { n: 1, t: t('why.steps.0.title'), d: t('why.steps.0.desc') },
+                { n: 2, t: t('why.steps.1.title'), d: t('why.steps.1.desc') },
+                { n: 3, t: t('why.steps.2.title'), d: t('why.steps.2.desc') },
+                { n: 4, t: t('why.steps.3.title'), d: t('why.steps.3.desc') },
+                { n: 5, t: t('why.steps.4.title'), d: t('why.steps.4.desc') },
+              ].map((s, i) => (
+                <div key={s.n} className={`flex gap-4 relative fade-up ${i < 4 ? "pb-7" : ""}`}>
+                  {i < 4 && <div className="absolute left-[17px] top-10 w-0.5 bottom-0 bg-gradient-to-b from-[rgba(0,180,216,0.45)] to-[rgba(0,180,216,0.02)]"/>}
                   <div className="flex-shrink-0 w-9 h-9 bg-[#0096C7] rounded-full flex items-center justify-center text-white font-black text-sm">{s.n}</div>
                   <div>
                     <div className="font-black text-white text-sm mb-1">{s.t}</div>
@@ -254,16 +241,25 @@ export default function Home() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-block bg-[rgba(0,150,199,0.08)] text-[#0096C7] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">Zielgruppen</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0A1628] tracking-tight mb-3">Für jeden Unternehmer die <span className="text-[#0096C7]">passende Lösung</span></h2>
-            <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">Ob Einzelunternehmer oder Mittelständler — unsere KI-Plattform passt sich Ihrer Branche an.</p>
+            <span className="inline-block bg-[rgba(0,150,199,0.08)] text-[#0096C7] text-xs font-bold tracking-[3px] uppercase px-3 py-1 rounded-full mb-3">{t('targets.badge')}</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0A1628] tracking-tight mb-3">{t('targets.title')} <span className="text-[#0096C7]">{t('targets.titleHighlight')}</span></h2>
+            <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">{t('targets.subtitle')}</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {targets.map((t, i) => (
-              <div key={t.name} className="bg-white hover:bg-white border-[1.5px] border-gray-200 hover:border-[#0096C7] rounded-xl p-5 text-center transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(0,150,199,0.12)] fade-up">
-                <span className="text-3xl mb-2 block">{t.icon}</span>
-                <div className="font-black text-[#0A1628] text-sm mb-1">{t.name}</div>
-                <div className="text-gray-400 text-xs">{t.desc}</div>
+            {[
+              { icon: "💻", name: t('targets.items.0.name'), desc: t('targets.items.0.desc') },
+              { icon: "🔨", name: t('targets.items.1.name'), desc: t('targets.items.1.desc') },
+              { icon: "🛒", name: t('targets.items.2.name'), desc: t('targets.items.2.desc') },
+              { icon: "🚚", name: t('targets.items.3.name'), desc: t('targets.items.3.desc') },
+              { icon: "🚀", name: t('targets.items.4.name'), desc: t('targets.items.4.desc') },
+              { icon: "📋", name: t('targets.items.5.name'), desc: t('targets.items.5.desc') },
+              { icon: "🍽️", name: t('targets.items.6.name'), desc: t('targets.items.6.desc') },
+              { icon: "🏘️", name: t('targets.items.7.name'), desc: t('targets.items.7.desc') },
+            ].map((item, i) => (
+              <div key={item.name} className="bg-white hover:bg-white border-[1.5px] border-gray-200 hover:border-[#0096C7] rounded-xl p-5 text-center transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(0,150,199,0.12)] fade-up">
+                <span className="text-3xl mb-2 block">{item.icon}</span>
+                <div className="font-black text-[#0A1628] text-sm mb-1">{item.name}</div>
+                <div className="text-gray-400 text-xs">{item.desc}</div>
               </div>
             ))}
           </div>
