@@ -116,8 +116,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <p className="text-center text-xs tracking-[3px] uppercase text-gray-400 font-semibold mb-5">Medien, Partner & Zertifizierungen</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Handelskammer D-CH","KfW Partner","Forbes","Focus Online","Business Angels Deutschland","Swiss Startup Association","Brands Wanted"].map(p => (
-              <div key={p} className="text-gray-400 text-xs font-semibold border border-gray-200 hover:border-[#0096C7] hover:text-[#0096C7] px-4 py-2 rounded-lg transition-all duration-200 opacity-60 hover:opacity-100">{p}</div>
+            {[
+              { name: "Fit for Fun", url: "https://www.fitforfun.de" },
+              { name: "Forbes", url: "https://www.forbes.com" },
+              { name: "Focus Online", url: "https://www.focus.de" },
+              { name: "KfW Partner", url: "https://www.kfw.de" },
+              { name: "Handelskammer D-CH", url: "https://www.handelskammer-d-ch.de" },
+              { name: "Business Angels Deutschland", url: "https://www.business-angels.de" },
+              { name: "Swiss Startup Association", url: "https://www.swissstartup.ch" },
+              { name: "Brands Wanted", url: "https://www.brandswanted.com" },
+              { name: "Unternehmen der Zukunft", url: "https://www.diind.de" },
+            ].map(p => (
+              <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" className="text-gray-400 text-xs font-semibold border border-gray-200 hover:border-[#0096C7] hover:text-[#0096C7] px-4 py-2 rounded-lg transition-all duration-200 opacity-60 hover:opacity-100">{p.name}</a>
             ))}
           </div>
         </div>
