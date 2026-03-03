@@ -10,13 +10,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center h-[70px] gap-3">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-          <div className="w-10 h-10 bg-[#0A1628] rounded-lg flex items-center justify-center text-[#00B4D8] font-black text-sm tracking-tighter">
-            ND
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span className="text-[#0A1628] font-black text-[1.05rem] tracking-tight">NON DOM</span>
-            <span className="text-[#0096C7] font-bold text-[0.58rem] tracking-[1.5px] uppercase">GROUP</span>
-          </div>
+          <img src="/logos/non-dom-logo.webp" alt="NON DOM GROUP" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
