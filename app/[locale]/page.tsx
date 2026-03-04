@@ -47,7 +47,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[#0A1628] opacity-60" />
         <div className="absolute inset-0 opacity-50" style={{backgroundImage:"radial-gradient(circle at 20% 50%, rgba(0,180,216,0.14) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(0,150,199,0.09) 0%, transparent 40%)"}}/>
         <div className="absolute inset-0" style={{backgroundImage:"linear-gradient(rgba(0,180,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,180,216,0.04) 1px, transparent 1px)", backgroundSize:"52px 52px", WebkitMaskImage:"radial-gradient(ellipse 90% 90% at 50% 50%, black 30%, transparent 100%)"}}/>
-        <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+        <div className={`max-w-7xl mx-auto relative z-10 grid gap-8 lg:gap-16 ${locale === 'de' ? 'lg:grid-cols-2' : 'lg:grid-cols-1'} items-start`}>
           <div>
             <div className="inline-flex items-center gap-2 bg-[rgba(0,180,216,0.18)] border border-[rgba(0,180,216,0.35)] px-3 sm:px-4 py-1.5 rounded-full text-[#48CAE4] text-xs font-semibold mb-5">
               <div className="flex items-center justify-center gap-3 sm:gap-8 text-sm font-semibold">
@@ -76,7 +76,7 @@ export default function Home() {
                 {t('hero.ctaSecondary')}
               </Link>
             </div>
-            <div className="flex gap-4 sm:gap-8 flex-wrap">
+            <div className="grid grid-cols-2 sm:flex gap-4 sm:gap-8 mb-10">
               {[["32+",t('hero.stat1')],["5",t('hero.stat2')],["€0",t('hero.stat3')],["48h",t('hero.stat4')]].map(([n,l]) => (
                 <div key={l}>
                   <span className="block text-2xl sm:text-[1.9rem] font-black text-[#00B4D8] tracking-tight leading-none">{n}</span>
@@ -87,7 +87,7 @@ export default function Home() {
 
             {/* Founder Video - German only */}
             {locale === 'de' && (
-              <div className="mt-10 max-w-[800px]">
+              <div className="mt-10 max-w-[600px] mx-auto lg:mx-0">
                 <img
                   style={{width: '100%', margin: 'auto', display: 'block'}}
                   className="vidyard-player-embed rounded-2xl shadow-[0_8px_30px_rgba(0,180,216,0.25)]"
@@ -100,18 +100,20 @@ export default function Home() {
               </div>
             )}
           </div>
-          {/* Benefits List */}
-          <div className="bg-white/10 backdrop-blur-md border border-[rgba(0,180,216,0.3)] rounded-2xl p-6 sm:p-8 shadow-[0_8px_32px_rgba(0,180,216,0.2)]">
-            <h2 className="text-white font-bold text-xl mb-6">{t('hero.benefitsTitle')}</h2>
-            <div className="flex flex-col gap-3">
-              {[0, 1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="flex items-center gap-3 py-1">
-                  <span className="text-[#00B4D8] text-xl flex-shrink-0">✅</span>
-                  <span className="text-white/90 text-lg leading-relaxed">{t(`hero.benefits.${i}`)}</span>
-                </div>
-              ))}
+          {/* Benefits List - German only */}
+          {locale === 'de' && (
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 sm:p-8 shadow-[0_8px_32px_rgba(0,180,216,0.2)]">
+              <h2 className="text-white font-bold text-xl mb-6">{t('hero.benefitsTitle')}</h2>
+              <div className="flex flex-col gap-4">
+                {[0, 1, 2, 3, 4, 5].map((i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <span className="text-green-400 text-xl flex-shrink-0 mt-0.5">✅</span>
+                    <span className="text-white/90 text-base sm:text-lg leading-relaxed">{t(`hero.benefits.${i}`)}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
 
