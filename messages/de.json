@@ -20,7 +20,16 @@
       "stat1": "Unternehmen",
       "stat2": "KI-Plattformen",
       "stat3": "Kostenloser Start",
-      "stat4": "Erste Ergebnisse"
+      "stat4": "Erste Ergebnisse",
+      "benefitsTitle": "Unsere Kunden profitieren:",
+      "benefits": {
+        "0": "Zahlen weniger Steuern",
+        "1": "Haben deutlich reduzierte Kosten",
+        "2": "Erhalten Zugang zu Liquidität",
+        "3": "Nutzen staatliche Fördermittel",
+        "4": "Bauen internationale Strukturen auf",
+        "5": "Schützen ihr Vermögen legal"
+      }
     },
     "platforms": {
       "app1": {

@@ -20,7 +20,16 @@
       "stat1": "Companies",
       "stat2": "AI Platforms",
       "stat3": "Free Start",
-      "stat4": "First Results"
+      "stat4": "First Results",
+      "benefitsTitle": "Our clients benefit from:",
+      "benefits": {
+        "0": "Pay less taxes",
+        "1": "Significantly reduced costs",
+        "2": "Access to liquidity",
+        "3": "Access to government grants",
+        "4": "Build international structures",
+        "5": "Legally protect their assets"
+      }
     },
     "platforms": {
       "app1": {

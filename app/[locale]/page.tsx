@@ -100,26 +100,17 @@ export default function Home() {
               </div>
             )}
           </div>
-          {/* Hero Card */}
-          <div className="hidden lg:block bg-white/5 border border-[rgba(0,180,216,0.2)] rounded-2xl p-7 backdrop-blur-sm">
-            <div className="text-white font-bold text-lg mb-5">{t('hero.platformsTitle')}</div>
-            {[
-              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/a2d19a68-3aec-422e-6d2b-b4087c2e7d00/public", name: "Business Angel App", href: "https://www.businessangel.app", tags: t('platforms.app1.tags') },
-              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/80501913-9d72-4804-335e-de63063c1800/public", name: "ImmoPortal", href: "https://portal.immoportal.app", tags: t('platforms.app2.tags') },
-              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/c582d6ad-dd7a-4aed-584f-5e9ace690900/public", name: "Buchhaltung KI", href: "https://www.buchhaltung-ki.app", tags: t('platforms.app3.tags') },
-              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/0201a548-ba53-4eb9-d265-183dc763d400/public", name: "E-Commerce Rente", href: "https://www.ecommercerente.com", tags: t('platforms.app4.tags') },
-              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/960202a1-985a-49ef-c707-22ca49543100/public", name: "Unternehmensoptimierung", href: "https://www.unternehmensoptimierung.app", tags: t('platforms.app5.tags') },
-            ].map((app) => (
-              <a key={app.name} href={app.href} target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-white/[0.04] hover:bg-[rgba(0,180,216,0.12)] border border-[rgba(0,180,216,0.1)] hover:border-[rgba(0,180,216,0.28)] rounded-xl p-3 mb-2.5 text-white transition-all duration-200 group">
-                <img src={app.icon} className="w-12 h-12 rounded-xl object-cover flex-shrink-0" alt={app.name} />
-                <div>
-                  <div className="font-bold text-sm">{app.name}</div>
-                  <div className="text-white/50 text-xs mt-0.5">{app.tags}</div>
+          {/* Benefits List */}
+          <div className="bg-white/10 backdrop-blur-md border border-[rgba(0,180,216,0.3)] rounded-2xl p-6 sm:p-8 shadow-[0_8px_32px_rgba(0,180,216,0.2)]">
+            <h2 className="text-white font-bold text-xl mb-6">{t('hero.benefitsTitle')}</h2>
+            <div className="flex flex-col gap-3">
+              {[0, 1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="flex items-center gap-3 py-1">
+                  <span className="text-[#00B4D8] text-xl flex-shrink-0">✅</span>
+                  <span className="text-white/90 text-lg leading-relaxed">{t(`hero.benefits.${i}`)}</span>
                 </div>
-                <span className="ml-auto text-[#00B4D8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-              </a>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
