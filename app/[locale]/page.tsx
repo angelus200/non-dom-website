@@ -87,10 +87,10 @@ export default function Home() {
 
             {/* Founder Video - German only */}
             {locale === 'de' && (
-              <div className="mt-10 max-w-[600px] mx-auto lg:mx-0">
+              <div className="max-w-lg mx-auto mt-6 rounded-xl overflow-hidden shadow-[0_8px_30px_rgba(0,180,216,0.25)]">
                 <img
                   style={{width: '100%', margin: 'auto', display: 'block'}}
-                  className="vidyard-player-embed rounded-2xl shadow-[0_8px_30px_rgba(0,180,216,0.25)]"
+                  className="vidyard-player-embed"
                   src="https://play.vidyard.com/CArVm63iGds3wzXw5D1kx4.jpg"
                   data-uuid="CArVm63iGds3wzXw5D1kx4"
                   data-v="4"
