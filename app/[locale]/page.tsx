@@ -83,13 +83,13 @@ export default function Home() {
                 href="https://share.vidyard.com/watch/CArVm63iGds3wzXw5D1kx4"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block mt-6 max-w-lg mx-auto rounded-xl overflow-hidden shadow-xl hover:opacity-90 transition-opacity cursor-pointer"
+                className="block max-w-lg mx-auto lg:mx-0 rounded-xl overflow-hidden shadow-xl hover:opacity-90 transition-opacity cursor-pointer"
               >
                 <div className="relative">
                   <img
                     src="https://play.vidyard.com/CArVm63iGds3wzXw5D1kx4.jpg"
                     alt="Die KI-Revolution: Überleben für KMU"
-                    className="w-full rounded-xl"
+                    className="w-full rounded-xl max-h-[300px] object-cover"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-black/50 rounded-full p-5 hover:bg-black/70 transition-colors">
