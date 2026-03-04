@@ -7,14 +7,6 @@ export default function Home() {
   const t = useTranslations('home');
   const locale = useLocale();
   useEffect(() => {
-    // Load Vidyard script for German locale
-    if (locale === 'de' && !document.querySelector('script[src*="vidyard"]')) {
-      const script = document.createElement('script');
-      script.src = 'https://play.vidyard.com/embed/v4.js';
-      script.async = true;
-      document.body.appendChild(script);
-    }
-
     // Fade-up animation observer
     const obs = new IntersectionObserver((entries) => {
       entries.forEach((e, i) => {
@@ -30,7 +22,7 @@ export default function Home() {
       obs.observe(el);
     });
     return () => obs.disconnect();
-  }, [locale]);
+  }, []);
 
   return (
     <>
@@ -87,17 +79,27 @@ export default function Home() {
 
             {/* Founder Video - German only */}
             {locale === 'de' && (
-              <div className="max-w-lg mx-auto mt-6 rounded-xl overflow-hidden shadow-[0_8px_30px_rgba(0,180,216,0.25)]">
-                <img
-                  style={{width: '100%', margin: 'auto', display: 'block'}}
-                  className="vidyard-player-embed"
-                  src="https://play.vidyard.com/CArVm63iGds3wzXw5D1kx4.jpg"
-                  data-uuid="CArVm63iGds3wzXw5D1kx4"
-                  data-v="4"
-                  data-type="inline"
-                  alt="Die KI-Revolution: Überleben für KMU"
-                />
-              </div>
+              <a
+                href="https://share.vidyard.com/watch/CArVm63iGds3wzXw5D1kx4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block mt-6 max-w-lg mx-auto rounded-xl overflow-hidden shadow-xl hover:opacity-90 transition-opacity cursor-pointer"
+              >
+                <div className="relative">
+                  <img
+                    src="https://play.vidyard.com/CArVm63iGds3wzXw5D1kx4.jpg"
+                    alt="Die KI-Revolution: Überleben für KMU"
+                    className="w-full rounded-xl"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="bg-black/50 rounded-full p-5 hover:bg-black/70 transition-colors">
+                      <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
             )}
           </div>
           {/* Benefits List - German only */}
