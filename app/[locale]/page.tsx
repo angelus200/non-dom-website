@@ -160,6 +160,8 @@ export default function Home() {
               { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/c582d6ad-dd7a-4aed-584f-5e9ace690900/public", name: "Buchhaltung KI", url: "buchhaltung-ki.app", href: "https://www.buchhaltung-ki.app", tags: t('platforms.app3.tags') },
               { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/0201a548-ba53-4eb9-d265-183dc763d400/public", name: "E-Commerce Rente", url: "ecommercerente.com", href: "https://www.ecommercerente.com", tags: t('platforms.app4.tags') },
               { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/960202a1-985a-49ef-c707-22ca49543100/public", name: "Unternehmensoptimierung", url: "unternehmensoptimierung.app", href: "https://www.unternehmensoptimierung.app", tags: t('platforms.app5.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/a2d19a68-3aec-422e-6d2b-b4087c2e7d00/public", name: "Private Market App", url: "private-market.app", href: "https://www.private-market.app", tags: t('platforms.app7.tags') },
+              { icon: "https://imagedelivery.net/rk4bV2CWwt-By7i6uzvaLA/a2d19a68-3aec-422e-6d2b-b4087c2e7d00/public", name: "Callmatic", url: "callmatic.io", href: "https://www.callmatic.io", tags: t('platforms.app8.tags') },
               { icon: "✨", name: t('platforms.app6.name'), url: t('platforms.app6.url'), href: null, tags: t('platforms.app6.tags'), disabled: true },
             ].map((app, i) => {
               const Card = (
