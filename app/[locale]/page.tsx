@@ -69,7 +69,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="grid grid-cols-2 sm:flex gap-4 sm:gap-8 mb-10">
-              {[["32+",t('hero.stat1')],["5",t('hero.stat2')],["€0",t('hero.stat3')],["48h",t('hero.stat4')]].map(([n,l]) => (
+              {[["32+",t('hero.stat1')],["7",t('hero.stat2')],["€0",t('hero.stat3')],["48h",t('hero.stat4')]].map(([n,l]) => (
                 <div key={l}>
                   <span className="block text-2xl sm:text-[1.9rem] font-black text-[#00B4D8] tracking-tight leading-none">{n}</span>
                   <span className="text-white/55 text-xs mt-0.5 block">{l}</span>
